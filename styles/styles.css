@@ -1,0 +1,943 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  font-family: "Montserrat";
+}
+
+.container {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.bottomLine {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2.7vw 0;
+}
+
+.bottomLine .social-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1.3vw 1.3vw 1.3vw;
+      grid-template-columns: 1.3vw 1.3vw 1.3vw;
+  gap: 1.1vw;
+}
+
+.bottomLine .social-icons .s__icon {
+  width: 1.3vw;
+  height: 1.3vw;
+}
+
+.bottomLine .social-icons .s__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.bottomLine hr {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 1.8vw;
+}
+
+.bottomLine span {
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  color: #000000;
+  opacity: 0.4;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo svg {
+  width: 2.4vw;
+  height: 2.4vw;
+  margin-right: 1.15vw;
+}
+
+.logo span {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.25vw;
+  line-height: 1.5vw;
+  color: #ffffff;
+}
+
+hr {
+  border-color: #bc915f;
+}
+
+.Promo {
+  position: relative;
+}
+
+.Promo::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width: 58.3%;
+  height: 100%;
+  background-color: #474c48;
+}
+
+.Promo .container header {
+  padding: 1.7vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 3.17vw;
+}
+
+.Promo .container header .header_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.Promo .container header .header_icons .icon {
+  width: 1.56vw;
+  height: 1.56vw;
+  margin-left: 1.4vw;
+}
+
+.Promo .container header .header_icons .icon svg {
+  width: 100%;
+}
+
+.Promo .container .body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 62.8% 37.2%;
+      grid-template-columns: 62.8% 37.2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 2.6vw;
+}
+
+.Promo .container .body .PromoBody {
+  color: #fff;
+  padding-right: 8.85vw;
+}
+
+.Promo .container .body .PromoBody h1 {
+  font-size: 1.875vw;
+  line-height: 2.4vw;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 6vw;
+}
+
+.Promo .container .body .PromoBody h1 > span {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  top: 1.5vw;
+  left: 5.7vw;
+}
+
+.Promo .container .body .PromoBody h1 > span::before {
+  position: absolute;
+  content: "";
+  width: 4.7vw;
+  height: 0.24vw;
+  background-color: #bc915f;
+  bottom: 0.48vw;
+  right: 102%;
+}
+
+.Promo .container .body .PromoBody h1 > span > span {
+  color: #bc915f;
+}
+
+.Promo .container .body .PromoBody .swiper-container {
+  width: 25vw;
+  margin: 0 auto;
+  padding: 0 2vw;
+  padding-bottom: 4vw;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-next,
+.Promo .container .body .PromoBody .swiper-container .swiper-prev {
+  position: relative;
+  z-index: 100;
+  color: #bc915f;
+  bottom: 7vw;
+  cursor: pointer;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-next {
+  left: 95%;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-prev {
+  right: 5%;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  width: 0.7vw;
+  height: 0.7vw;
+  margin: 0 0.78vw;
+  opacity: 0.5;
+  position: relative;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(1) {
+  background: #fff;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(1).swiper-pagination-bullet-active::after {
+  border: 1px solid #fff;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(2) {
+  background: #d18e0c;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(2).swiper-pagination-bullet-active::after {
+  border: 1px solid #d18e0c;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(3) {
+  background: #242424;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(3).swiper-pagination-bullet-active::after {
+  border: 1px solid #242424;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(4) {
+  background: #c4c4c4;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet:nth-of-type(4).swiper-pagination-bullet-active::after {
+  border: 1px solid #c4c4c4;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  opacity: 0.8;
+}
+
+.Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+}
+
+.Promo .container .body .ReserveDesk {
+  padding-left: 1.1vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Promo .container .body .ReserveDesk p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9vw;
+  line-height: 1.7vw;
+}
+
+.Promo .container .body .ReserveDesk p:first-of-type {
+  font-weight: 700;
+  font-size: 1.25vw;
+  line-height: 2vw;
+  margin-bottom: 0.5vw;
+}
+
+.Promo .container .body .ReserveDesk p:last-of-type {
+  width: 95%;
+  margin-bottom: 1.35vw;
+}
+
+.Promo .container .body .ReserveDesk form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+}
+
+.Promo .container .body .ReserveDesk form input {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.26vw;
+  padding: 0.73vw;
+  font-size: 0.93vw;
+  line-height: 1.15vw;
+  text-align: center;
+  color: #797979;
+  font-weight: 300;
+  margin-bottom: 0.83vw;
+}
+
+.Promo .container .body .ReserveDesk form input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.Promo .container .body .ReserveDesk form input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.Promo .container .body .ReserveDesk form input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.Promo .container .body .ReserveDesk form input::placeholder {
+  opacity: 0.5;
+}
+
+.Promo .container .body .ReserveDesk form button {
+  background-color: #bc915f;
+  border-radius: 0.26vw;
+  width: 100%;
+  border: none;
+  padding: 0.73vw;
+  font-size: 0.93vw;
+  line-height: 1.15vw;
+  color: #fff;
+}
+
+.DeskInfo {
+  background-image: url(./../prepare/People.png);
+  background-repeat: no-repeat;
+  background-position: 0 center;
+  background-size: cover;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+}
+
+.DeskInfo .container {
+  height: 100%;
+  width: 100%;
+  background-color: #474c48;
+  padding-top: 14.7vw;
+  padding-left: 5.2vw;
+  padding-bottom: 14.7vw;
+}
+
+.DeskInfo .container p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2.6vw;
+  color: #ffffff;
+  width: 65%;
+}
+
+.DeskInfo .container hr {
+  margin: 1.3vw 0;
+}
+
+.DeskInfo .container p:last-of-type {
+  font-weight: 200;
+  font-size: 1.25vw;
+  line-height: 1.97vw;
+  color: #ffffff;
+  width: 64%;
+}
+
+.DeskInfo .photo {
+  width: 45%;
+}
+
+.DeskInfo .photo span {
+  position: relative;
+  display: block;
+  width: 16.25vw;
+  height: 0.73vw;
+  background-color: #bc915f;
+  opacity: 0.5;
+}
+
+.DeskInfo .photo span:first-of-type {
+  top: 4.5vw;
+}
+
+.DeskInfo .photo span:first-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  width: 14.27vw;
+  bottom: calc(100% + 1vw);
+}
+
+.DeskInfo .photo span:first-of-type::after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  width: 12.27vw;
+  top: calc(100% + 1vw);
+}
+
+.DeskInfo .photo span:last-of-type {
+  top: 40.5vw;
+  left: 28.38vw;
+}
+
+.DeskInfo .photo span:last-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  width: 12.27vw;
+  right: 0;
+  bottom: calc(100% + 1vw);
+}
+
+.DeskInfo .photo span:last-of-type::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  background-color: inherit;
+  height: 100%;
+  width: 14.27vw;
+  top: calc(100% + 1vw);
+}
+
+.DeskPlan .container {
+  padding: 2.6vw 0;
+}
+
+.DeskPlan .container img {
+  width: 100%;
+}
+
+.PhoneCharger {
+  background-image: url(./../prepare/PhoneCharger.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 55% 45%;
+      grid-template-columns: 55% 45%;
+}
+
+.PhoneCharger .container {
+  height: 100%;
+  width: 100%;
+  background-color: #474c48;
+  padding-top: 7vw;
+  padding-right: 4.1vw;
+  padding-bottom: 7vw;
+}
+
+.PhoneCharger .container p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2.6vw;
+  color: #ffffff;
+  text-align: right;
+  margin-right: 1.3vw;
+}
+
+.PhoneCharger .container hr {
+  margin: 1.3vw 0;
+}
+
+.PhoneCharger .container p:last-of-type {
+  font-weight: 200;
+  font-size: 1.25vw;
+  line-height: 1.97vw;
+  color: #ffffff;
+  width: 64%;
+  margin-left: 36%;
+}
+
+.PhoneCharger .photo {
+  width: 45%;
+}
+
+.PhoneCharger .photo span {
+  position: relative;
+  display: block;
+  width: 16.25vw;
+  height: 0.73vw;
+  background-color: #bc915f;
+  opacity: 0.5;
+}
+
+.PhoneCharger .photo span:first-of-type {
+  top: 4.5vw;
+  left: 28.38vw;
+}
+
+.PhoneCharger .photo span:first-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  right: 0;
+  width: 14.27vw;
+  bottom: calc(100% + 1vw);
+}
+
+.PhoneCharger .photo span:first-of-type::after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  right: 0;
+  width: 12.27vw;
+  top: calc(100% + 1vw);
+}
+
+.PhoneCharger .photo span:last-of-type {
+  top: 19.3vw;
+  left: 0;
+}
+
+.PhoneCharger .photo span:last-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  width: 12.27vw;
+  left: 0;
+  bottom: calc(100% + 1vw);
+}
+
+.PhoneCharger .photo span:last-of-type::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  background-color: inherit;
+  height: 100%;
+  width: 14.27vw;
+  top: calc(100% + 1vw);
+}
+
+.BluetoothSpeakers {
+  background-image: url(./../prepare/BluetoothSpeaker.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 45% 55%;
+      grid-template-columns: 45% 55%;
+}
+
+.BluetoothSpeakers .container {
+  height: 100%;
+  width: 100%;
+  background-color: #474c48;
+  padding-top: 7vw;
+  padding-left: 4.1vw;
+  padding-bottom: 7vw;
+}
+
+.BluetoothSpeakers .container p:first-of-type {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2.6vw;
+  color: #ffffff;
+}
+
+.BluetoothSpeakers .container hr {
+  margin: 1.3vw 0;
+}
+
+.BluetoothSpeakers .container p:last-of-type {
+  font-weight: 200;
+  font-size: 1.25vw;
+  line-height: 1.97vw;
+  color: #ffffff;
+  width: 64%;
+}
+
+.BluetoothSpeakers .photo {
+  width: 45%;
+}
+
+.BluetoothSpeakers .photo span {
+  position: relative;
+  display: block;
+  width: 16.25vw;
+  height: 0.73vw;
+  background-color: #bc915f;
+  opacity: 0.5;
+}
+
+.BluetoothSpeakers .photo span:first-of-type {
+  top: 4.5vw;
+  left: 0;
+}
+
+.BluetoothSpeakers .photo span:first-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  left: 0;
+  width: 14.27vw;
+  bottom: calc(100% + 1vw);
+}
+
+.BluetoothSpeakers .photo span:first-of-type::after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  left: 0;
+  width: 12.27vw;
+  top: calc(100% + 1vw);
+}
+
+.BluetoothSpeakers .photo span:last-of-type {
+  top: 19.3vw;
+  left: 28.38vw;
+}
+
+.BluetoothSpeakers .photo span:last-of-type::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  height: 100%;
+  width: 12.27vw;
+  right: 0;
+  bottom: calc(100% + 1vw);
+}
+
+.BluetoothSpeakers .photo span:last-of-type::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  background-color: inherit;
+  height: 100%;
+  width: 14.27vw;
+  top: calc(100% + 1vw);
+}
+
+.FeaturesTable {
+  padding-top: 7vw;
+  padding-bottom: 7.3vw;
+  background-color: #474c48;
+  margin-bottom: 23vw;
+}
+
+.FeaturesTable .container {
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.FeaturesTable .container p {
+  text-align: center;
+  color: #fff;
+}
+
+.FeaturesTable .container p.title {
+  padding-bottom: 1.3vw;
+  font-weight: 400;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  border-bottom: 2px solid #bc915f;
+}
+
+.FeaturesTable .container p.text {
+  padding: 1vw 1.3vw;
+  font-weight: 200;
+  font-size: 1.25vw;
+  line-height: 1.9vw;
+}
+
+.FeaturesTable .container hr {
+  position: absolute;
+  top: 0;
+  left: calc((100% - 2px) / 2);
+  height: 2px;
+  width: 34.55vw;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  z-index: 100;
+}
+
+.FeaturesTable .container .photo {
+  position: absolute;
+  height: 22.4vw;
+  width: 32.28vw;
+  top: calc(100% + 2.6vw);
+}
+
+.FeaturesTable .container .photo:first-of-type {
+  left: 0;
+}
+
+.FeaturesTable .container .photo:last-of-type {
+  right: 0;
+}
+
+.FeaturesTable .container .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.TableLights {
+  margin-bottom: 21vw;
+}
+
+.TableLights .container h1 {
+  font-weight: 300;
+  font-size: 2vw;
+  line-height: 2.5vw;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 1.3vw;
+}
+
+.TableLights .container p {
+  margin: 1.9vw 0;
+  font-weight: 300;
+  font-size: 1.25vw;
+  line-height: 1.9vw;
+  text-align: center;
+  color: #333333;
+}
+
+.TableLights .container .photos {
+  width: 100%;
+  position: relative;
+}
+
+.TableLights .container .photos img {
+  position: absolute;
+  width: 50%;
+  height: 23.5vw;
+  top: 0;
+}
+
+.TableLights .container .photos img:first-of-type {
+  left: 0;
+}
+
+.TableLights .container .photos img:last-of-type {
+  right: 0;
+}
+
+.ForWork {
+  background-color: #474c48;
+  padding-top: 14.3vw;
+}
+
+.ForWork .container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 42% 58%;
+      grid-template-columns: 42% 58%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ForWork .container .body {
+  position: relative;
+}
+
+.ForWork .container .body h2 {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 3vw;
+  color: #ffffff;
+  width: 85%;
+  margin-bottom: 1.3vw;
+}
+
+.ForWork .container .body hr {
+  position: absolute;
+  width: 50vw;
+  right: 4.2vw;
+}
+
+.ForWork .container .body ul {
+  margin-top: 1.5vw;
+  list-style: none;
+}
+
+.ForWork .container .body ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 300;
+  font-size: 1.25vw;
+  line-height: 2.5vw;
+  color: #ffffff;
+}
+
+.ForWork .container .body ul li img {
+  width: 1.45vw;
+  height: 1.04vw;
+  margin-right: 1.7vw;
+}
+
+.ForWork .container .photo {
+  width: 37.5vw;
+  height: 26vw;
+}
+
+.ForWork .container .photo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #474c48;
+}
+
+footer .container .bottomLine span {
+  color: #fff;
+  opacity: 1;
+}
+/*# sourceMappingURL=styles.css.map */
