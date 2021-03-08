@@ -77,8 +77,18 @@ select {
   }
 }
 
+::-webkit-scrollbar {
+  width: 1vw;
+  background: #474c48;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bc915f;
+}
+
 body {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
 .container {
@@ -110,6 +120,15 @@ body {
 .bottomLine .social-icons .s__icon {
   width: 1.3vw;
   height: 1.3vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .bottomLine .social-icons .s__icon svg {
@@ -203,6 +222,7 @@ hr {
 }
 
 .Promo .container header .header_icons .icon {
+  outline: none;
   width: 1.56vw;
   height: 1.56vw;
   margin-left: 1.4vw;
@@ -270,19 +290,20 @@ hr {
 
 .Promo .container .body .PromoBody .swiper-container .swiper-next,
 .Promo .container .body .PromoBody .swiper-container .swiper-prev {
-  position: relative;
+  position: absolute;
   z-index: 100;
+  font-size: 2vw;
   color: #bc915f;
   bottom: 7vw;
   cursor: pointer;
 }
 
 .Promo .container .body .PromoBody .swiper-container .swiper-next {
-  left: 95%;
+  right: 5%;
 }
 
 .Promo .container .body .PromoBody .swiper-container .swiper-prev {
-  right: 5%;
+  left: 5%;
 }
 
 .Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet {
@@ -443,6 +464,7 @@ hr {
 }
 
 .DeskInfo .container {
+  z-index: 1;
   height: 100%;
   width: 100%;
   background-color: #474c48;
@@ -541,10 +563,11 @@ hr {
 }
 
 .PhoneCharger {
+  background-color: #474c48;
   background-image: url(./../prepare/PhoneCharger.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: auto 100%;
+  background-size: 45% 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 55% 45%;
@@ -552,6 +575,7 @@ hr {
 }
 
 .PhoneCharger .container {
+  z-index: 1;
   height: 100%;
   width: 100%;
   background-color: #474c48;
@@ -647,10 +671,11 @@ hr {
 }
 
 .BluetoothSpeakers {
+  background-color: #474c48;
   background-image: url(./../prepare/BluetoothSpeaker.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: auto 100%;
+  background-size: 45% 100%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 45% 55%;
@@ -658,6 +683,7 @@ hr {
 }
 
 .BluetoothSpeakers .container {
+  z-index: 1;
   height: 100%;
   width: 100%;
   background-color: #474c48;
@@ -684,10 +710,6 @@ hr {
   line-height: 1.97vw;
   color: #ffffff;
   width: 64%;
-}
-
-.BluetoothSpeakers .photo {
-  width: 45%;
 }
 
 .BluetoothSpeakers .photo span {
@@ -726,7 +748,7 @@ hr {
 
 .BluetoothSpeakers .photo span:last-of-type {
   top: 19.3vw;
-  left: 28.38vw;
+  left: 28.36vw;
 }
 
 .BluetoothSpeakers .photo span:last-of-type::before {
@@ -800,7 +822,7 @@ hr {
 .FeaturesTable .container .photo {
   position: absolute;
   height: 22.4vw;
-  width: 32.28vw;
+  width: 32.2vw;
   top: calc(100% + 2.6vw);
 }
 
@@ -848,7 +870,7 @@ hr {
 
 .TableLights .container .photos img {
   position: absolute;
-  width: 50%;
+  width: 50.5%;
   height: 23.5vw;
   top: 0;
 }
@@ -930,6 +952,95 @@ hr {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.Video {
+  background-color: #474c48;
+  padding-top: 9.16vw;
+  padding-bottom: 8.4vw;
+}
+
+.Video .container video {
+  outline: none;
+  width: 100%;
+  height: 27.85vw;
+}
+
+.ReserveDesk .container {
+  padding: 6.7vw 0;
+}
+
+.ReserveDesk .container p {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9vw;
+  line-height: 1.7vw;
+  margin-bottom: 1.3vw;
+}
+
+.ReserveDesk .container p:first-of-type {
+  font-weight: 700;
+  font-size: 1.25vw;
+  line-height: 2vw;
+  margin-bottom: 0.4vw;
+}
+
+.ReserveDesk .container form {
+  min-width: 310px;
+  width: 30%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ReserveDesk .container form input {
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 0.26vw;
+  padding: 0.73vw;
+  font-size: 0.93vw;
+  line-height: 1.15vw;
+  text-align: center;
+  color: #797979;
+  font-weight: 300;
+  margin-bottom: 0.83vw;
+}
+
+.ReserveDesk .container form input::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.ReserveDesk .container form input:-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.ReserveDesk .container form input::-ms-input-placeholder {
+  opacity: 0.5;
+}
+
+.ReserveDesk .container form input::placeholder {
+  opacity: 0.5;
+}
+
+.ReserveDesk .container form button {
+  background-color: #bc915f;
+  border-radius: 0.26vw;
+  width: 100%;
+  border: none;
+  padding: 0.73vw;
+  font-size: 0.93vw;
+  line-height: 1.15vw;
+  color: #fff;
 }
 
 footer {

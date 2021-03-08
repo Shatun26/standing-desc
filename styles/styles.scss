@@ -78,8 +78,18 @@ select {
 $mainGray: #474c48;
 $mainBrown: #bc915f;
 
+::-webkit-scrollbar {
+  width: 1vw;
+  background: $mainGray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $mainBrown;
+}
+
 body {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
 .container {
@@ -99,6 +109,9 @@ body {
     .s__icon {
       width: 1.3vw;
       height: 1.3vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       svg {
         width: 100%;
         height: 100%;
@@ -163,6 +176,7 @@ hr {
         justify-content: space-between;
         width: fit-content;
         .icon {
+          outline: none;
           width: 1.56vw;
           height: 1.56vw;
           margin-left: 1.4vw;
@@ -215,17 +229,19 @@ hr {
           padding-bottom: 4vw;
           .swiper-next,
           .swiper-prev {
-            position: relative;
+            position: absolute;
             z-index: 100;
+            font-size: 2vw;
             color: $mainBrown;
             bottom: 7vw;
             cursor: pointer;
           }
           .swiper-next {
-            left: 95%;
+            // left: 95%;
+            right: 5%;
           }
           .swiper-prev {
-            right: 5%;
+            left: 5%;
           }
           .swiper-pagination {
             .swiper-pagination-bullet {
@@ -350,6 +366,7 @@ hr {
   display: grid;
   grid-template-columns: 45% 55%;
   .container {
+    z-index: 1;
     height: 100%;
     width: 100%;
     background-color: $mainGray;
@@ -439,13 +456,15 @@ hr {
 }
 
 .PhoneCharger {
+  background-color: $mainGray;
   background-image: url(./../prepare/PhoneCharger.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: auto 100%;
+  background-size: 45% 100%;
   display: grid;
   grid-template-columns: 55% 45%;
   .container {
+    z-index: 1;
     height: 100%;
     width: 100%;
     background-color: $mainGray;
@@ -531,13 +550,15 @@ hr {
 }
 
 .BluetoothSpeakers {
+  background-color: $mainGray;
   background-image: url(./../prepare/BluetoothSpeaker.png);
   background-repeat: no-repeat;
   background-position: left center;
-  background-size: auto 100%;
+  background-size: 45% 100%;
   display: grid;
   grid-template-columns: 45% 55%;
   .container {
+    z-index: 1;
     height: 100%;
     width: 100%;
     background-color: $mainGray;
@@ -563,7 +584,7 @@ hr {
     }
   }
   .photo {
-    width: 45%;
+    // border: 1px solid red;
     span {
       position: relative;
       display: block;
@@ -595,7 +616,7 @@ hr {
       }
       &:last-of-type {
         top: 19.3vw;
-        left: 28.38vw;
+        left: 28.36vw;
         &::before {
           position: absolute;
           content: "";
@@ -649,6 +670,7 @@ hr {
       position: absolute;
       top: 0;
       left: calc((100% - 2px) / 2);
+      // left: 49.999995%;
       height: 2px;
       width: 34.55vw;
       transform: rotate(90deg);
@@ -658,7 +680,7 @@ hr {
     .photo {
       position: absolute;
       height: 22.4vw;
-      width: 32.28vw;
+      width: 32.2vw;
       top: calc(100% + 2.6vw);
       &:first-of-type {
         left: 0;
@@ -699,7 +721,7 @@ hr {
       position: relative;
       img {
         position: absolute;
-        width: 50%;
+        width: 50.5%;
         height: 23.5vw;
         top: 0;
         &:first-of-type {
@@ -761,6 +783,72 @@ hr {
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+    }
+  }
+}
+
+.Video {
+  background-color: $mainGray;
+  padding-top: 9.16vw;
+  padding-bottom: 8.4vw;
+  .container {
+    video {
+      outline: none;
+      width: 100%;
+      height: 27.85vw;
+    }
+  }
+}
+
+.ReserveDesk {
+  .container {
+    padding: 6.7vw 0;
+    p {
+      text-align: center;
+      font-weight: 300;
+      font-size: 0.9vw;
+      line-height: 1.7vw;
+      &:first-of-type {
+        font-weight: 700;
+        font-size: 1.25vw;
+        line-height: 2vw;
+        margin-bottom: 0.4vw;
+      }
+      margin-bottom: 1.3vw;
+    }
+    form {
+      min-width: 310px;
+      width: 30%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      input {
+        width: 100%;
+        border: 1px solid #c0c0c0;
+        box-sizing: border-box;
+        border-radius: 0.26vw;
+        padding: 0.73vw;
+        font-size: 0.93vw;
+        line-height: 1.15vw;
+        text-align: center;
+        color: #797979;
+        font-weight: 300;
+        &::placeholder {
+          opacity: 0.5;
+        }
+        margin-bottom: 0.83vw;
+      }
+      button {
+        background-color: $mainBrown;
+        border-radius: 0.26vw;
+        width: 100%;
+        border: none;
+        padding: 0.73vw;
+        font-size: 0.93vw;
+        line-height: 1.15vw;
+        color: #fff;
       }
     }
   }

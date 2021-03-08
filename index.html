@@ -10,7 +10,9 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
     <script defer src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
     <script defer src="./script.js"></script>
     <title>Coolest Standing Desk</title>
   </head>
@@ -270,16 +272,40 @@
           <h2>Perfect for any work environment</h2>
           <hr noshade />
           <ul>
-            <li><img src="./prepare/checkmark.svg" alt=""> Office Spaces</li>
-            <li><img src="./prepare/checkmark.svg" alt=""> Studio Apartments</li>
-            <li><img src="./prepare/checkmark.svg" alt=""> Dorm Rooms</li>
-            <li><img src="./prepare/checkmark.svg" alt=""> Man Caves</li>
-            <li><img src="./prepare/checkmark.svg" alt=""> Mom’s House</li>
+            <li><img src="./prepare/checkmark.svg" alt="" /> Office Spaces</li>
+            <li>
+              <img src="./prepare/checkmark.svg" alt="" /> Studio Apartments
+            </li>
+            <li><img src="./prepare/checkmark.svg" alt="" /> Dorm Rooms</li>
+            <li><img src="./prepare/checkmark.svg" alt="" /> Man Caves</li>
+            <li><img src="./prepare/checkmark.svg" alt="" /> Mom’s House</li>
           </ul>
         </div>
         <div class="photo">
-          <img src="./prepare/PerfectForWork.png" alt="">
+          <img src="./prepare/PerfectForWork.png" alt="" />
         </div>
+      </div>
+    </section>
+    <section class="Video">
+      <div class="container">
+        <video
+          class="video-js"
+          controls
+          src="./Golden - 48569.mp4"
+          id="player"
+        ></video>
+      </div>
+    </section>
+    <section class="ReserveDesk">
+      <div class="container">
+        <p>Reserve My Coolest Standing Desk.</p>
+        <p>
+          We’re launching soon. Get an exclusive discount<br />by signing up now!
+        </p>
+        <form>
+          <input required type="text" placeholder="Email" />
+          <button type="submit">Reserve My Launch Invite</button>
+        </form>
       </div>
     </section>
     <footer>
@@ -351,5 +377,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="newskin.js"></script>
   </body>
 </html>
