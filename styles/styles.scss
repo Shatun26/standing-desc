@@ -359,20 +359,21 @@ hr {
 }
 
 .DeskInfo {
+  background-color: $mainGray;
   background-image: url(./../prepare/People.png);
   background-repeat: no-repeat;
-  background-position: 0 center;
-  background-size: cover;
-  display: grid;
-  grid-template-columns: 45% 55%;
+  background-position: 0 bottom;
+  background-size: auto 33.75vw;
+
   .container {
     z-index: 1;
     height: 100%;
-    width: 100%;
+    width: 55%;
+    margin-left: 45%;
     background-color: $mainGray;
     padding-top: 14.7vw;
     padding-left: 5.2vw;
-    padding-bottom: 14.7vw;
+    padding-bottom: 8.125vw;
     p:first-of-type {
       font-style: normal;
       font-weight: 400;
@@ -446,27 +447,18 @@ hr {
   }
 }
 
-.DeskPlan {
-  .container {
-    padding: 2.6vw 0;
-    img {
-      width: 100%;
-    }
-  }
-}
-
 .PhoneCharger {
   background-color: $mainGray;
-  background-image: url(./../prepare/PhoneCharger.png);
+  background-image: url(./../prepare/PhoneChargerNew.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 45% 100%;
-  display: grid;
-  grid-template-columns: 55% 45%;
+  background-size: 45% 23.43vw;
+  padding: 7.8vw 0;
   .container {
+    width: 55%;
+    margin-right: 45%;
     z-index: 1;
     height: 100%;
-    width: 100%;
     background-color: $mainGray;
     padding-top: 7vw;
     padding-right: 4.1vw;
@@ -551,16 +543,15 @@ hr {
 
 .BluetoothSpeakers {
   background-color: $mainGray;
-  background-image: url(./../prepare/BluetoothSpeaker.png);
+  background-image: url(./../prepare/BluetoothSpeakerNew.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 45% 100%;
-  display: grid;
-  grid-template-columns: 45% 55%;
   .container {
     z-index: 1;
     height: 100%;
-    width: 100%;
+    width: 55%;
+    margin-left: 45%;
     background-color: $mainGray;
     padding-top: 7vw;
     padding-left: 4.1vw;
@@ -581,61 +572,6 @@ hr {
       line-height: 1.97vw;
       color: #ffffff;
       width: 64%;
-    }
-  }
-  .photo {
-    // border: 1px solid red;
-    span {
-      position: relative;
-      display: block;
-      width: 16.25vw;
-      height: 0.73vw;
-      background-color: $mainBrown;
-      opacity: 0.5;
-      &:first-of-type {
-        top: 4.5vw;
-        left: 0;
-        &::before {
-          position: absolute;
-          content: "";
-          background-color: inherit;
-          height: 100%;
-          left: 0;
-          width: 14.27vw;
-          bottom: calc(100% + 1vw);
-        }
-        &::after {
-          position: absolute;
-          content: "";
-          background-color: inherit;
-          height: 100%;
-          left: 0;
-          width: 12.27vw;
-          top: calc(100% + 1vw);
-        }
-      }
-      &:last-of-type {
-        top: 19.3vw;
-        left: 28.36vw;
-        &::before {
-          position: absolute;
-          content: "";
-          background-color: inherit;
-          height: 100%;
-          width: 12.27vw;
-          right: 0;
-          bottom: calc(100% + 1vw);
-        }
-        &::after {
-          position: absolute;
-          content: "";
-          right: 0;
-          background-color: inherit;
-          height: 100%;
-          width: 14.27vw;
-          top: calc(100% + 1vw);
-        }
-      }
     }
   }
 }
@@ -698,7 +634,7 @@ hr {
 }
 
 .TableLights {
-  margin-bottom: 21vw;
+  margin-bottom: 20vw;
   .container {
     h1 {
       font-weight: 300;
@@ -730,6 +666,13 @@ hr {
         &:last-of-type {
           right: 0;
         }
+      }
+    }
+    .photo {
+      width: 100%;
+      position: relative;
+      img {
+        position: absolute;
       }
     }
   }
@@ -796,14 +739,23 @@ hr {
     video {
       outline: none;
       width: 100%;
-      height: 27.85vw;
+      height: 27.8vw;
     }
   }
 }
 
-.ReserveDesk {
+.ReserveDeskBottom {
+  background-color: #fff;
+  background-image: url(./../prepare/ReserveDesk.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
   .container {
-    padding: 6.7vw 0;
+    background-color: #fff;
+    padding: 12.24vw 0;
+    padding-right: 16.6vw;
+    margin-left: 58.4vw;
+    width: 41.6vw;
     p {
       text-align: center;
       font-weight: 300;

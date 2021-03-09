@@ -453,24 +453,22 @@ hr {
 }
 
 .DeskInfo {
+  background-color: #474c48;
   background-image: url(./../prepare/People.png);
   background-repeat: no-repeat;
-  background-position: 0 center;
-  background-size: cover;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 45% 55%;
-      grid-template-columns: 45% 55%;
+  background-position: 0 bottom;
+  background-size: auto 33.75vw;
 }
 
 .DeskInfo .container {
   z-index: 1;
   height: 100%;
-  width: 100%;
+  width: 55%;
+  margin-left: 45%;
   background-color: #474c48;
   padding-top: 14.7vw;
   padding-left: 5.2vw;
-  padding-bottom: 14.7vw;
+  padding-bottom: 8.125vw;
 }
 
 .DeskInfo .container p:first-of-type {
@@ -554,30 +552,20 @@ hr {
   top: calc(100% + 1vw);
 }
 
-.DeskPlan .container {
-  padding: 2.6vw 0;
-}
-
-.DeskPlan .container img {
-  width: 100%;
-}
-
 .PhoneCharger {
   background-color: #474c48;
-  background-image: url(./../prepare/PhoneCharger.png);
+  background-image: url(./../prepare/PhoneChargerNew.png);
   background-repeat: no-repeat;
   background-position: right center;
-  background-size: 45% 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 55% 45%;
-      grid-template-columns: 55% 45%;
+  background-size: 45% 23.43vw;
+  padding: 7.8vw 0;
 }
 
 .PhoneCharger .container {
+  width: 55%;
+  margin-right: 45%;
   z-index: 1;
   height: 100%;
-  width: 100%;
   background-color: #474c48;
   padding-top: 7vw;
   padding-right: 4.1vw;
@@ -672,20 +660,17 @@ hr {
 
 .BluetoothSpeakers {
   background-color: #474c48;
-  background-image: url(./../prepare/BluetoothSpeaker.png);
+  background-image: url(./../prepare/BluetoothSpeakerNew.png);
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 45% 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 45% 55%;
-      grid-template-columns: 45% 55%;
 }
 
 .BluetoothSpeakers .container {
   z-index: 1;
   height: 100%;
-  width: 100%;
+  width: 55%;
+  margin-left: 45%;
   background-color: #474c48;
   padding-top: 7vw;
   padding-left: 4.1vw;
@@ -710,65 +695,6 @@ hr {
   line-height: 1.97vw;
   color: #ffffff;
   width: 64%;
-}
-
-.BluetoothSpeakers .photo span {
-  position: relative;
-  display: block;
-  width: 16.25vw;
-  height: 0.73vw;
-  background-color: #bc915f;
-  opacity: 0.5;
-}
-
-.BluetoothSpeakers .photo span:first-of-type {
-  top: 4.5vw;
-  left: 0;
-}
-
-.BluetoothSpeakers .photo span:first-of-type::before {
-  position: absolute;
-  content: "";
-  background-color: inherit;
-  height: 100%;
-  left: 0;
-  width: 14.27vw;
-  bottom: calc(100% + 1vw);
-}
-
-.BluetoothSpeakers .photo span:first-of-type::after {
-  position: absolute;
-  content: "";
-  background-color: inherit;
-  height: 100%;
-  left: 0;
-  width: 12.27vw;
-  top: calc(100% + 1vw);
-}
-
-.BluetoothSpeakers .photo span:last-of-type {
-  top: 19.3vw;
-  left: 28.36vw;
-}
-
-.BluetoothSpeakers .photo span:last-of-type::before {
-  position: absolute;
-  content: "";
-  background-color: inherit;
-  height: 100%;
-  width: 12.27vw;
-  right: 0;
-  bottom: calc(100% + 1vw);
-}
-
-.BluetoothSpeakers .photo span:last-of-type::after {
-  position: absolute;
-  content: "";
-  right: 0;
-  background-color: inherit;
-  height: 100%;
-  width: 14.27vw;
-  top: calc(100% + 1vw);
 }
 
 .FeaturesTable {
@@ -842,7 +768,7 @@ hr {
 }
 
 .TableLights {
-  margin-bottom: 21vw;
+  margin-bottom: 20vw;
 }
 
 .TableLights .container h1 {
@@ -881,6 +807,15 @@ hr {
 
 .TableLights .container .photos img:last-of-type {
   right: 0;
+}
+
+.TableLights .container .photo {
+  width: 100%;
+  position: relative;
+}
+
+.TableLights .container .photo img {
+  position: absolute;
 }
 
 .ForWork {
@@ -963,14 +898,26 @@ hr {
 .Video .container video {
   outline: none;
   width: 100%;
-  height: 27.85vw;
+  height: 27.8vw;
 }
 
-.ReserveDesk .container {
-  padding: 6.7vw 0;
+.ReserveDeskBottom {
+  background-color: #fff;
+  background-image: url(./../prepare/ReserveDesk.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: auto 100%;
 }
 
-.ReserveDesk .container p {
+.ReserveDeskBottom .container {
+  background-color: #fff;
+  padding: 12.24vw 0;
+  padding-right: 16.6vw;
+  margin-left: 58.4vw;
+  width: 41.6vw;
+}
+
+.ReserveDeskBottom .container p {
   text-align: center;
   font-weight: 300;
   font-size: 0.9vw;
@@ -978,14 +925,14 @@ hr {
   margin-bottom: 1.3vw;
 }
 
-.ReserveDesk .container p:first-of-type {
+.ReserveDeskBottom .container p:first-of-type {
   font-weight: 700;
   font-size: 1.25vw;
   line-height: 2vw;
   margin-bottom: 0.4vw;
 }
 
-.ReserveDesk .container form {
+.ReserveDeskBottom .container form {
   min-width: 310px;
   width: 30%;
   margin: 0 auto;
@@ -1001,7 +948,7 @@ hr {
           align-items: center;
 }
 
-.ReserveDesk .container form input {
+.ReserveDeskBottom .container form input {
   width: 100%;
   border: 1px solid #c0c0c0;
   -webkit-box-sizing: border-box;
@@ -1016,23 +963,23 @@ hr {
   margin-bottom: 0.83vw;
 }
 
-.ReserveDesk .container form input::-webkit-input-placeholder {
+.ReserveDeskBottom .container form input::-webkit-input-placeholder {
   opacity: 0.5;
 }
 
-.ReserveDesk .container form input:-ms-input-placeholder {
+.ReserveDeskBottom .container form input:-ms-input-placeholder {
   opacity: 0.5;
 }
 
-.ReserveDesk .container form input::-ms-input-placeholder {
+.ReserveDeskBottom .container form input::-ms-input-placeholder {
   opacity: 0.5;
 }
 
-.ReserveDesk .container form input::placeholder {
+.ReserveDeskBottom .container form input::placeholder {
   opacity: 0.5;
 }
 
-.ReserveDesk .container form button {
+.ReserveDeskBottom .container form button {
   background-color: #bc915f;
   border-radius: 0.26vw;
   width: 100%;
