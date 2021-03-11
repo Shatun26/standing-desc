@@ -95,32 +95,65 @@
               </svg>
             </a>
           </div>
+          <div class="burger">
+            <span></span>
+          </div>
         </header>
         <div class="body">
-          <div class="PromoBody">
-            <h1>
-              Introducing the Coolest.<br />Standing Desk.
-              <span>ever<span>.</span></span>
-            </h1>
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <img src="./prepare/TableSlide.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./prepare/TableSlide.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./prepare/TableSlide.png" alt="" />
-                </div>
-                <div class="swiper-slide">
-                  <img src="./prepare/TableSlide.png" alt="" />
-                </div>
+          <h1>
+            Introducing the Coolest.<br />Standing Desk.
+            <span>ever<span>.</span></span>
+          </h1>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./prepare/TableSlide.png" alt="" />
               </div>
-              <div class="swiper-pagination"></div>
-              <span class="swiper-prev">&#9668;</span>
-              <span class="swiper-next">&#9658;</span>
+              <div class="swiper-slide">
+                <img src="./prepare/TableSlide.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./prepare/TableSlide.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="./prepare/TableSlide.png" alt="" />
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
+            <span class="swiper-prev">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5646 9.18111C17.867 9.18132 18.1569 9.30165 18.3705 9.5156C18.5842 9.72956 18.7041 10.0196 18.7039 10.322C18.7037 10.6244 18.5834 10.9143 18.3694 11.1279C18.1554 11.3416 17.8654 11.4615 17.563 11.4613L4.36215 11.4613L8.82259 15.9217C9.03628 16.1354 9.15633 16.4252 9.15633 16.7274C9.15633 17.0296 9.03628 17.3195 8.82259 17.5332C8.6089 17.7469 8.31908 17.8669 8.01688 17.8669C7.71467 17.8669 7.42485 17.7469 7.21116 17.5332L0.805718 11.1277C0.592029 10.914 0.47198 10.6242 0.47198 10.322C0.471979 10.0198 0.592029 9.72998 0.805718 9.51629L7.21116 3.11085C7.42485 2.89716 7.71467 2.77711 8.01688 2.77711C8.31908 2.77711 8.6089 2.89716 8.82259 3.11085C9.03628 3.32454 9.15633 3.61436 9.15633 3.91656C9.15633 4.21876 9.03628 4.50859 8.82259 4.72228L4.36215 9.18272L17.5646 9.18111Z"
+                  fill="#BC915F"
+                />
+              </svg>
+            </span>
+            <span class="swiper-next">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.5"
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M17.5646 9.18111C17.867 9.18132 18.1569 9.30165 18.3705 9.5156C18.5842 9.72956 18.7041 10.0196 18.7039 10.322C18.7037 10.6244 18.5834 10.9143 18.3694 11.1279C18.1554 11.3416 17.8654 11.4615 17.563 11.4613L4.36215 11.4613L8.82259 15.9217C9.03628 16.1354 9.15633 16.4252 9.15633 16.7274C9.15633 17.0296 9.03628 17.3195 8.82259 17.5332C8.6089 17.7469 8.31908 17.8669 8.01688 17.8669C7.71467 17.8669 7.42485 17.7469 7.21116 17.5332L0.805718 11.1277C0.592029 10.914 0.47198 10.6242 0.47198 10.322C0.471979 10.0198 0.592029 9.72998 0.805718 9.51629L7.21116 3.11085C7.42485 2.89716 7.71467 2.77711 8.01688 2.77711C8.31908 2.77711 8.6089 2.89716 8.82259 3.11085C9.03628 3.32454 9.15633 3.61436 9.15633 3.91656C9.15633 4.21876 9.03628 4.50859 8.82259 4.72228L4.36215 9.18272L17.5646 9.18111Z"
+                  fill="#BC915F"
+                />
+              </svg>
+            </span>
           </div>
           <div class="ReserveDesk">
             <p>Reserve My Coolest Standing Desk.</p>
@@ -277,10 +310,15 @@
         <div class="c-video">
           <video
             src="./Golden - 48569.mp4"
-            poster="./Preview.png"
+            controls
+            preload="metadata"
+            loop
           ></video>
-          <div class="psevdo-play"><img src="./prepare/psevdo-play.svg" alt=""></div>
-
+          <div class="psevdo-play">
+            <div class="play-container">
+              <img src="./prepare/psevdo-play.svg" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>

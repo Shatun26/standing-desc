@@ -7,7 +7,6 @@ const swiper = new Swiper(".swiper-container", {
   pagination: {
     el: ".swiper-pagination",
   },
-
   navigation: {
     nextEl: ".swiper-next",
     prevEl: ".swiper-prev",
@@ -15,17 +14,15 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 let video = document.querySelector(".Video video");
-let cVideo = document.querySelector('.c-video')
+let cVideo = document.querySelector(".c-video");
 let psevdoPlay = document.querySelector(".psevdo-play");
 function togglePlayPause() {
   if (video.paused) {
     video.play();
-    psevdoPlay.style.opacity = 0;
-  } else {
-    video.pause();
-    psevdoPlay.style.opacity = 1;
-  }
+    psevdoPlay.style.display = "none";
+  } 
 }
-cVideo.onclick = function () {
+
+psevdoPlay.onclick = function(){
   togglePlayPause();
-};
+}
