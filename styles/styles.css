@@ -5,6 +5,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 ul[class],
@@ -504,6 +505,14 @@ hr {
   width: 65%;
 }
 
+.DeskInfo .container p:first-of-type br {
+  display: none;
+}
+
+.DeskInfo .container p:first-of-type b {
+  font-weight: 300;
+}
+
 .DeskInfo .container hr {
   margin: 1.3vw 0;
 }
@@ -721,14 +730,18 @@ hr {
   width: 64%;
 }
 
-.FeaturesTable {
+.FeaturesTable.mobile {
+  display: none;
+}
+
+.FeaturesTable.desktop-tablet {
   padding-top: 7vw;
   padding-bottom: 7.3vw;
   background-color: #474c48;
   margin-bottom: 23vw;
 }
 
-.FeaturesTable .container {
+.FeaturesTable.desktop-tablet .container {
   position: relative;
   display: -ms-grid;
   display: grid;
@@ -736,12 +749,12 @@ hr {
       grid-template-columns: 1fr 1fr;
 }
 
-.FeaturesTable .container p {
+.FeaturesTable.desktop-tablet .container p {
   text-align: center;
   color: #fff;
 }
 
-.FeaturesTable .container p.title {
+.FeaturesTable.desktop-tablet .container p.title {
   padding-bottom: 1.3vw;
   font-weight: 400;
   font-size: 2vw;
@@ -749,14 +762,14 @@ hr {
   border-bottom: 2px solid #bc915f;
 }
 
-.FeaturesTable .container p.text {
+.FeaturesTable.desktop-tablet .container p.text {
   padding: 1vw 1.3vw;
   font-weight: 200;
   font-size: 1.25vw;
   line-height: 1.9vw;
 }
 
-.FeaturesTable .container hr {
+.FeaturesTable.desktop-tablet .container hr {
   position: absolute;
   top: 0;
   left: calc((100% - 2px) / 2);
@@ -769,22 +782,22 @@ hr {
   z-index: 100;
 }
 
-.FeaturesTable .container .photo {
+.FeaturesTable.desktop-tablet .container .photo {
   position: absolute;
   height: 22.4vw;
   width: 32.2vw;
   top: calc(100% + 2.6vw);
 }
 
-.FeaturesTable .container .photo:first-of-type {
+.FeaturesTable.desktop-tablet .container .photo:first-of-type {
   left: 0;
 }
 
-.FeaturesTable .container .photo:last-of-type {
+.FeaturesTable.desktop-tablet .container .photo:last-of-type {
   right: 0;
 }
 
-.FeaturesTable .container .photo img {
+.FeaturesTable.desktop-tablet .container .photo img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1065,6 +1078,10 @@ footer {
   background-color: #474c48;
 }
 
+footer .container p {
+  display: none;
+}
+
 footer .container .bottomLine span {
   color: #fff;
   opacity: 1;
@@ -1111,51 +1128,6 @@ footer .container .bottomLine span {
   }
   .container {
     width: 92.7%;
-  }
-  .bottomLine {
-    padding: 3.5vw 0;
-  }
-  .bottomLine .social-icons {
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1.8vw 1.8vw 1.8vw;
-        grid-template-columns: 1.8vw 1.8vw 1.8vw;
-    gap: 1.5vw;
-  }
-  .bottomLine .social-icons .s__icon {
-    width: 1.8vw;
-    height: 1.8vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .bottomLine .social-icons .s__icon svg {
-    width: 100%;
-    height: 100%;
-  }
-  .bottomLine hr {
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    margin: 0;
-    margin-left: 6vw;
-    margin-right: 1vw;
-  }
-  .bottomLine span {
-    font-size: 2.4vw;
-    line-height: 2.8vw;
-    font-weight: 300;
-    color: #fff;
-    -webkit-transform: translateX(3vw);
-            transform: translateX(3vw);
   }
   .logo svg {
     width: 3.65vw;
@@ -1297,12 +1269,16 @@ footer .container .bottomLine span {
     margin: 0 1.5vw;
   }
   .Promo .container .body .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: scale(1.8);
-            transform: scale(1.8);
+    top: -0.56vw;
+    left: -0.56vw;
+    right: -0.56vw;
+    bottom: -0.56vw;
+    width: auto;
+    height: auto;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
   }
   .Promo .container .body .ReserveDesk {
     -ms-flex-item-align: start;
@@ -1346,6 +1322,33 @@ footer .container .bottomLine span {
     font-size: 2.1vw;
     line-height: 2.5vw;
     color: #fff;
+  }
+  .Promo .container .bottomLine {
+    padding: 3.5vw 0;
+  }
+  .Promo .container .bottomLine .social-icons {
+    -webkit-transform: scale(1.5) translateX(1vw);
+            transform: scale(1.5) translateX(1vw);
+    -ms-grid-columns: 1.8vw 1.8vw 1.8vw;
+        grid-template-columns: 1.8vw 1.8vw 1.8vw;
+    gap: 1.5vw;
+  }
+  .Promo .container .bottomLine .social-icons .s__icon {
+    width: 1.8vw;
+    height: 1.8vw;
+  }
+  .Promo .container .bottomLine hr {
+    margin: 0;
+    margin-left: 7vw;
+    margin-right: 1vw;
+  }
+  .Promo .container .bottomLine span {
+    font-size: 2.4vw;
+    line-height: 2.8vw;
+    font-weight: 300;
+    color: #fff;
+    -webkit-transform: translateX(3vw);
+            transform: translateX(3vw);
   }
   .DeskInfo {
     background-size: auto 100%;
@@ -1445,21 +1448,21 @@ footer .container .bottomLine span {
     padding-bottom: 7.3vw;
     margin: 0;
   }
-  .FeaturesTable .container {
+  .FeaturesTable .desktop-tablet {
     width: 86.4%;
   }
-  .FeaturesTable .container p.title {
+  .FeaturesTable .desktop-tablet p.title {
     font-weight: 300;
     font-size: 2.8vw;
     line-height: 3.5vw;
   }
-  .FeaturesTable .container p.text {
+  .FeaturesTable .desktop-tablet p.text {
     padding: 1vw 1.3vw;
     font-weight: 200;
     font-size: 2vw;
     line-height: 3.4vw;
   }
-  .FeaturesTable .container hr {
+  .FeaturesTable .desktop-tablet hr {
     width: 49vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
@@ -1467,7 +1470,7 @@ footer .container .bottomLine span {
             transform-origin: left;
     z-index: 100;
   }
-  .FeaturesTable .container .photo {
+  .FeaturesTable .desktop-tablet .photo {
     height: 30.6vw;
     width: 43vw;
     top: calc(100% + 1.7vw);
@@ -1498,200 +1501,640 @@ footer .container .bottomLine span {
   .ForWork {
     padding-top: 4.3vw;
     padding: 0;
+    background-image: url(./../prepare/PerfectForWorkNew.png);
+    background-repeat: no-repeat;
+    background-size: auto 35vw;
+    background-position: right center;
   }
   .ForWork .container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 42% 58%;
-        grid-template-columns: 42% 58%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .ForWork .container .body {
-    position: relative;
+    background-color: #474c48;
+    display: block;
+    width: 52%;
+    margin-right: 48%;
+    padding-left: 12.1vw;
   }
   .ForWork .container .body h2 {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 2.5vw;
-    line-height: 3vw;
-    color: #ffffff;
-    width: 85%;
-    margin-bottom: 1.3vw;
+    font-weight: 300;
+    font-size: 3.125vw;
+    line-height: 3.77vw;
+    width: 75%;
+    margin-bottom: 3vw;
   }
   .ForWork .container .body hr {
-    position: absolute;
-    width: 50vw;
-    right: 4.2vw;
+    right: 4.29vw;
   }
   .ForWork .container .body ul {
-    margin-top: 1.5vw;
-    list-style: none;
+    margin-top: 3vw;
   }
   .ForWork .container .body ul li {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-weight: 300;
-    font-size: 1.25vw;
-    line-height: 2.5vw;
-    color: #ffffff;
+    font-weight: 200;
+    font-size: 2.3vw;
+    line-height: 4.7vw;
   }
   .ForWork .container .body ul li img {
-    width: 1.45vw;
-    height: 1.04vw;
-    margin-right: 1.7vw;
+    width: 2.3vw;
+    height: 1.7vw;
+    margin-right: 2.7vw;
   }
   .ForWork .container .photo {
     display: none;
-    width: 37.5vw;
-    height: 26vw;
-  }
-  .ForWork .container .photo img {
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
   }
   .Video {
-    background-color: #474c48;
-    padding-top: 9.16vw;
-    padding-bottom: 8.4vw;
+    padding-top: 10.8vw;
+    padding-bottom: 8vw;
   }
   .Video .container {
-    position: relative;
-  }
-  .Video .container .c-video {
-    cursor: pointer;
+    width: 100vw;
   }
   .Video .container .c-video video {
-    -o-object-fit: fill;
-       object-fit: fill;
-    width: 100%;
-    height: 27.8vw;
-    outline: none;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-  }
-  .Video .container .c-video .psevdo-play {
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background-image: url(./../Preview.png);
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    z-index: 1;
+    height: 43.125vw;
   }
   .Video .container .c-video .psevdo-play .play-container {
-    width: 5.46vw;
-    height: 6.2vw;
-  }
-  .Video .container .c-video .psevdo-play .play-container img {
-    width: 100%;
-    height: 100%;
+    width: 11.2vw;
+    height: 12.3vw;
   }
   .ReserveDeskBottom {
-    background-color: #fff;
+    background-color: #474c48;
     background-image: url(./../prepare/ReserveDesk.png);
-    background-repeat: no-repeat;
+    background-size: 48vw auto;
     background-position: left center;
-    background-size: contain;
+    margin-bottom: 8vw;
   }
   .ReserveDeskBottom .container {
-    background-color: #fff;
-    padding: 12.24vw 0;
-    padding-right: 16.6vw;
-    margin-left: 58.4vw;
-    width: 41.6vw;
+    background-color: #474c48;
+    padding: 0 3vw;
+    margin-left: 48%;
+    width: 52%;
   }
   .ReserveDeskBottom .container p {
-    text-align: center;
-    font-weight: 300;
-    font-size: 0.9vw;
-    line-height: 1.7vw;
-    margin-bottom: 1.3vw;
+    color: #fff;
+    font-weight: 200;
+    font-size: 2vw;
+    line-height: 4vw;
+    width: 100%;
+    letter-spacing: 0.1vw;
+    margin-bottom: 2vw;
+  }
+  .ReserveDeskBottom .container p br {
+    display: none;
   }
   .ReserveDeskBottom .container p:first-of-type {
-    font-weight: 700;
-    font-size: 1.25vw;
-    line-height: 2vw;
-    margin-bottom: 0.4vw;
+    width: 100%;
+    font-weight: 500;
+    font-size: 2.34vw;
+    line-height: 3.8vw;
+    margin-bottom: 1vw;
   }
   .ReserveDeskBottom .container form {
-    margin: 0 2.6vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    margin: 0;
+    width: 100%;
+  }
+  .ReserveDeskBottom .container form input {
+    border-radius: 0.65vw;
+    padding: 1.8vw;
+    font-size: 2vw;
+    line-height: 2.6vw;
+    font-weight: 300;
+    margin-bottom: 2vw;
+  }
+  .ReserveDeskBottom .container form button {
+    font-weight: 600;
+    letter-spacing: 0.1vw;
+    border-radius: 0.65vw;
+    padding: 1.8vw;
+    font-size: 2vw;
+    line-height: 2.6vw;
+  }
+  footer {
+    background: #3c3c3c;
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+  }
+  footer .container {
+    width: 97%;
+  }
+  footer .container .bottomLine {
+    padding: 2.47vw 0;
+  }
+  footer .container .bottomLine .logo {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .ReserveDeskBottom .container form input {
-    width: 100%;
-    border: 1px solid #c0c0c0;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 0.26vw;
-    padding: 0.73vw;
-    font-size: 0.93vw;
-    line-height: 1.15vw;
-    text-align: center;
-    color: #797979;
+  footer .container .bottomLine .logo svg {
+    width: 2.34vw;
+    height: 2.34vw;
+    margin-right: 1vw;
+  }
+  footer .container .bottomLine .logo span {
+    font-size: 1.1vw;
+    letter-spacing: 0.1vw;
+    line-height: 1;
+  }
+  footer .container .bottomLine .social-icons {
+    -ms-grid-columns: 1.2vw 1.2vw 1.2vw;
+        grid-template-columns: 1.2vw 1.2vw 1.2vw;
+    gap: 1.5vw;
+  }
+  footer .container .bottomLine .social-icons .s__icon {
+    width: 1.2vw;
+    height: 1.2vw;
+  }
+  footer .container .bottomLine .social-icons .s__icon path {
+    fill: #fff;
+    stroke-width: 1px;
+  }
+  footer .container .bottomLine hr {
+    margin: 0 1.9vw;
+    border: none;
+    height: 1px;
+    background-color: #bc915f;
+  }
+  footer .container .bottomLine span {
+    font-size: 2.4vw;
+    line-height: 2.8vw;
     font-weight: 300;
-    margin-bottom: 0.83vw;
+    color: #fff;
   }
-  .ReserveDeskBottom .container form input::-webkit-input-placeholder {
-    opacity: 0.5;
+}
+
+@media (max-width: 460px) {
+  .container {
+    width: 90.3%;
   }
-  .ReserveDeskBottom .container form input:-ms-input-placeholder {
-    opacity: 0.5;
+  .logo svg {
+    width: 7.46vw;
+    height: 7.46vw;
+    margin-right: 2.6vw;
   }
-  .ReserveDeskBottom .container form input::-ms-input-placeholder {
-    opacity: 0.5;
+  .logo span {
+    font-size: 4.8vw;
+    line-height: 5.86vw;
   }
-  .ReserveDeskBottom .container form input::placeholder {
-    opacity: 0.5;
+  hr {
+    border-color: #bc915f;
+  }
+  .Promo .container header {
+    padding: 6.13vw 0;
+    margin-bottom: 7.2vw;
+  }
+  .Promo .container header .header_icons {
+    display: none;
+  }
+  .Promo .container header .burger {
+    width: 7.2vw;
+    height: 7.2vw;
+  }
+  .Promo .container header .burger span {
+    top: calc((100% - 0.53vw) / 2);
+    border-radius: 1.3vw;
+    width: 7.2vw;
+    height: 0.53vw;
+  }
+  .Promo .container header .burger span::before {
+    border-radius: 1.3vw;
+    width: 7.2vw;
+    height: 0.53vw;
+    top: -1.8vw;
+  }
+  .Promo .container header .burger span::after {
+    border-radius: 1.3vw;
+    width: 7.2vw;
+    height: 0.53vw;
+    top: 1.8vw;
+  }
+  .Promo .container .body {
+    display: block;
+  }
+  .Promo .container .body h1 {
+    font-size: 6.4vw;
+    line-height: 7.73vw;
+    width: 100%;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 13.6vw;
+  }
+  .Promo .container .body h1 > span {
+    position: static;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    font-size: 25.6vw;
+    line-height: 27.2vw;
+  }
+  .Promo .container .body h1 > span::before {
+    display: none;
+  }
+  .Promo .container .body h1 > span > span {
+    display: none;
+  }
+  .Promo .container .body .swiper-container {
+    width: 100vw;
+    -webkit-transform: translateX(-5.3vw);
+            transform: translateX(-5.3vw);
+    margin: 0 auto;
+    padding: 0 12vw;
+    padding-bottom: 15vw;
+    margin-bottom: 8vw;
+  }
+  .Promo .container .body .swiper-container .swiper-next,
+  .Promo .container .body .swiper-container .swiper-prev {
+    bottom: 35vw;
+    width: 4vw;
+    height: 4vw;
+  }
+  .Promo .container .body .swiper-container .swiper-next {
+    right: 5%;
+  }
+  .Promo .container .body .swiper-container .swiper-prev {
+    left: 5%;
+  }
+  .Promo .container .body .swiper-container .swiper-pagination .swiper-pagination-bullet {
+    width: 2.3vw;
+    height: 2.3vw;
+    margin: 0 2.5vw;
+  }
+  .Promo .container .body .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
+    top: -0.7vw;
+    left: -0.7vw;
+    right: -0.7vw;
+    bottom: -0.7vw;
+    width: auto;
+    height: auto;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center;
+            transform-origin: center;
+  }
+  .Promo .container .body .ReserveDesk p:first-of-type {
+    font-size: 4.8vw;
+    line-height: 7.73vw;
+    margin-bottom: 1vw;
+  }
+  .Promo .container .body .ReserveDesk p:last-of-type {
+    margin-bottom: 6vw;
+    font-size: 4.26vw;
+    line-height: 6.93vw;
+  }
+  .Promo .container .body .ReserveDesk form input {
+    border-radius: 0.65vw;
+    padding: 3.4vw;
+    font-size: 4.34vw;
+    line-height: 5.3vw;
+    margin-bottom: 3.9vw;
+  }
+  .Promo .container .body .ReserveDesk form button {
+    border-radius: 0.65vw;
+    padding: 3.5vw;
+    font-size: 4.34vw;
+    line-height: 5.3vw;
+  }
+  .Promo .container .bottomLine {
+    display: none;
+  }
+  .DeskInfo {
+    background-size: auto 82vw;
+    background-position: -6vw 8.45vw;
+    padding-top: 97vw;
+    background-color: transparent;
+  }
+  .DeskInfo .container {
+    width: 90.3%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .DeskInfo .container p:first-of-type {
+    font-size: 5.8vw;
+    line-height: 8.7vw;
+    text-align: center;
+    width: 100%;
+  }
+  .DeskInfo .container p:first-of-type br {
+    display: inline;
+  }
+  .DeskInfo .container p:first-of-type span {
+    font-weight: 500;
+  }
+  .DeskInfo .container hr {
+    margin: 5.8vw 0;
+  }
+  .DeskInfo .container p:last-of-type {
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 160.4%;
+    width: 100%;
+    text-align: justify;
+  }
+  .DeskInfo .photo {
+    display: none;
+  }
+  .PhoneCharger {
+    margin: 11.6vw 0;
+    background-size: auto 52vw;
+    background-position: center top;
+    padding-top: 58vw;
+    background-color: transparent;
+  }
+  .PhoneCharger .container {
+    width: 90.3%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .PhoneCharger .container p:first-of-type {
+    font-size: 5.8vw;
+    line-height: 8.7vw;
+    text-align: center;
+    font-weight: 500;
+    width: 78%;
+    margin: 0 auto;
+  }
+  .PhoneCharger .container hr {
+    margin: 5.8vw 0;
+  }
+  .PhoneCharger .container p:last-of-type {
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 160.4%;
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+  }
+  .PhoneCharger .photo {
+    display: none;
+  }
+  .BluetoothSpeakers {
+    margin: 11.6vw 0;
+    background-size: auto 52vw;
+    background-position: center top;
+    padding-top: 58vw;
+    background-color: transparent;
+  }
+  .BluetoothSpeakers .container {
+    width: 90.3%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .BluetoothSpeakers .container p:first-of-type {
+    font-size: 5.8vw;
+    line-height: 8.7vw;
+    text-align: center;
+    font-weight: 500;
+    width: 100%;
+    margin: 0;
+  }
+  .BluetoothSpeakers .container hr {
+    margin: 5.8vw 0;
+  }
+  .BluetoothSpeakers .container p:last-of-type {
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 160.4%;
+    width: 100%;
+    text-align: justify;
+    margin: 0;
+  }
+  .BluetoothSpeakers .photo {
+    display: none;
+  }
+  .FeaturesTable.desktop-tablet {
+    display: none;
+  }
+  .FeaturesTable.mobile {
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 11.6vw 0;
+    background-repeat: no-repeat;
+    background-size: auto 70.3vw;
+    background-position: center top;
+    padding-top: 76vw;
+  }
+  .FeaturesTable.mobile .container {
+    background-color: #474c48;
+    display: block;
+    width: 100%;
+    color: #fff;
+  }
+  .FeaturesTable.mobile .container p:first-of-type {
+    font-size: 5.8vw;
+    line-height: 8.7vw;
+    text-align: center;
+    font-weight: 500;
+    width: 90.3%;
+    margin: 0 auto;
+  }
+  .FeaturesTable.mobile .container hr {
+    margin: 5.8vw auto;
+    width: 90.3%;
+  }
+  .FeaturesTable.mobile .container p:last-of-type {
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 160.4%;
+    width: 90.3%;
+    text-align: justify;
+    margin: 0 auto;
+  }
+  .mob-1 {
+    background-image: url(./../prepare/StorageNew.png);
+  }
+  .mob-2 {
+    background-image: url(./../prepare/DeskPadNew.png);
+  }
+  .TableLights {
+    background-color: #474c48;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 11.6vw 0;
+    background-image: url(./../prepare/RGBLights.png);
+    background-repeat: no-repeat;
+    background-size: auto 35.2vw;
+    background-position: center top;
+    padding-top: 40.8vw;
+  }
+  .TableLights .container {
+    background-color: #474c48;
+    display: block;
+    width: 100%;
+  }
+  .TableLights .container h1 {
+    font-size: 5.8vw;
+    line-height: 8.7vw;
+    text-align: center;
+    font-weight: 500;
+    width: 90.3%;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .TableLights .container hr {
+    margin: 5.8vw auto;
+    width: 90.3%;
+  }
+  .TableLights .container p {
+    font-weight: 200;
+    font-size: 4vw;
+    line-height: 160.4%;
+    width: 90.3%;
+    text-align: justify;
+    margin: 0 auto;
+    color: #fff;
+  }
+  .TableLights .container .photo {
+    display: none;
+  }
+  .ForWork {
+    background-color: #474c48;
+    display: block;
+    margin: 0;
+    padding: 0;
+    margin: 11.6vw 0;
+    background-image: url(./../prepare/PerfectForWorkNew.png);
+    background-repeat: no-repeat;
+    background-size: auto 75vw;
+    background-position: center top;
+    padding-top: 80vw;
+  }
+  .ForWork .container {
+    background-color: #474c48;
+    display: block;
+    width: 90.3%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .ForWork .container .body h2 {
+    font-weight: 300;
+    font-size: 5.8vw;
+    line-height: 7.2vw;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 7.2vw;
+  }
+  .ForWork .container .body hr {
+    position: static;
+    width: 100%;
+  }
+  .ForWork .container .body ul {
+    margin-top: 7.2vw;
+  }
+  .ForWork .container .body ul li {
+    font-weight: 200;
+    font-size: 5.8vw;
+    line-height: 7vw;
+    margin-bottom: 6vw;
+  }
+  .ForWork .container .body ul li img {
+    width: 6.7vw;
+    height: 4.8vw;
+    margin-right: 8vw;
+  }
+  .Video {
+    padding: 0;
+  }
+  .Video .container {
+    width: 100vw;
+  }
+  .Video .container .c-video video {
+    height: 43.125vw;
+  }
+  .Video .container .c-video .psevdo-play {
+    background-image: url(./../PreviewMobile.png);
+  }
+  .Video .container .c-video .psevdo-play .play-container {
+    width: 11.2vw;
+    height: 12.3vw;
+  }
+  .ReserveDeskBottom {
+    background-image: url(./../prepare/ReserveDesk.png);
+    background-size: auto 64vw;
+    background-position: center bottom;
+    margin: 0;
+    padding-bottom: 64vw;
+  }
+  .ReserveDeskBottom .container {
+    background-color: #474c48;
+    padding: 19vw 3vw;
+    margin: 0 auto;
+    width: 90.3%;
+  }
+  .ReserveDeskBottom .container p {
+    font-weight: 200;
+    font-size: 3.8vw;
+    line-height: 6.3vw;
+    width: 100%;
+    letter-spacing: 0.1vw;
+    margin-bottom: 4vw;
+  }
+  .ReserveDeskBottom .container p br {
+    display: none;
+  }
+  .ReserveDeskBottom .container p:first-of-type {
+    width: 100%;
+    font-size: 4.34vw;
+    line-height: 7vw;
+    line-height: 3.8vw;
+    margin-bottom: 2vw;
+  }
+  .ReserveDeskBottom .container form {
+    margin: 0;
+    width: 100%;
+  }
+  .ReserveDeskBottom .container form input {
+    border-radius: 0.65vw;
+    padding: 3.4vw;
+    font-size: 4.34vw;
+    line-height: 5.3vw;
+    margin-bottom: 3.9vw;
   }
   .ReserveDeskBottom .container form button {
-    background-color: #bc915f;
-    border-radius: 0.26vw;
-    width: 100%;
-    border: none;
-    padding: 0.73vw;
-    font-size: 0.93vw;
-    line-height: 1.15vw;
-    color: #fff;
+    letter-spacing: normal;
+    border-radius: 0.65vw;
+    padding: 3.5vw;
+    font-size: 4.34vw;
+    line-height: 5.3vw;
   }
   footer {
     background-color: #474c48;
+    padding: 5.3vw 0;
   }
-  footer .container .bottomLine span {
-    color: #fff;
-    opacity: 1;
+  footer .container {
+    width: 90.3%;
+  }
+  footer .container .bottomLine {
+    padding: 0;
+  }
+  footer .container .bottomLine .logo svg {
+    width: 8.2vw;
+    height: 8.2vw;
+    margin-right: 1.9vw;
+  }
+  footer .container .bottomLine .logo span {
+    font-weight: 400;
+    font-size: 4.3vw;
+    line-height: 5.3vw;
+  }
+  footer .container .bottomLine .social-icons {
+    -ms-grid-columns: 4.8vw 4.8vw 4.8vw;
+        grid-template-columns: 4.8vw 4.8vw 4.8vw;
+    gap: 4.3vw;
+  }
+  footer .container .bottomLine .social-icons .s__icon {
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+  footer .container .bottomLine hr {
+    display: none;
+  }
+  footer .container p {
+    margin-top: 4.1vw;
+    text-align: center;
+    display: block;
+    font-size: 3.8vw;
+    line-height: 4.8vw;
+    font-weight: 200;
+    color: #ffffff;
+    opacity: 0.4;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,7 @@ const swiper = new Swiper(".swiper-container", {
   slidesPerView: 1,
   spaceBetween: 500,
   centeredSlides: true,
+  allowTouchMove: false,
   pagination: {
     el: ".swiper-pagination",
   },
