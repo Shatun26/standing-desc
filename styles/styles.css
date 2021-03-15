@@ -1106,7 +1106,13 @@ footer .container .bottomLine span {
   .Promo .container .body .PromoBody .swiper-container .swiper-next {
     right: 0%;
   }
-  .Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  .Promo
+.container
+.body
+.PromoBody
+.swiper-container
+.swiper-pagination
+.swiper-pagination-bullet {
     width: 0.9vw;
     height: 0.9vw;
   }
@@ -1159,15 +1165,56 @@ footer .container .bottomLine span {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 3.17vw;
+    position: relative;
   }
-  .Promo .container header .header_icons {
+  .Promo .container header .header_icons .icon {
     display: none;
+  }
+  .Promo .container header .header_icons.active {
+    margin-right: 2vw;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    height: 3.8vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .Promo .container header .header_icons.active .icon {
+    height: 100%;
+    width: 2.7vw;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(1) {
+    display: block;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(1) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(2) {
+    display: block;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(2) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(3) {
+    display: block;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(3) path {
+    stroke: white;
   }
   .Promo .container header .burger {
     display: block;
     width: 3.5vw;
     height: 3.5vw;
     position: relative;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
   }
   .Promo .container header .burger span {
     top: calc((100% - 0.26vw) / 2);
@@ -1197,6 +1244,10 @@ footer .container .bottomLine span {
     background-color: #fff;
     left: 0;
     top: 0.8vw;
+  }
+  .Promo .container header .burger.active {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .Promo .container .body {
     -ms-grid-columns: 50% 50%;
@@ -1444,35 +1495,38 @@ footer .container .bottomLine span {
     width: 95%;
   }
   .FeaturesTable {
-    padding-top: 7vw;
-    padding-bottom: 7.3vw;
     margin: 0;
+    margin-top: 7vw;
+    padding-bottom: 7.3vw;
   }
-  .FeaturesTable .desktop-tablet {
+  .FeaturesTable.desktop-tablet {
+    margin-bottom: 0;
+  }
+  .FeaturesTable.desktop-tablet .container {
     width: 86.4%;
   }
-  .FeaturesTable .desktop-tablet p.title {
+  .FeaturesTable.desktop-tablet .container p.title {
     font-weight: 300;
     font-size: 2.8vw;
     line-height: 3.5vw;
   }
-  .FeaturesTable .desktop-tablet p.text {
+  .FeaturesTable.desktop-tablet .container p.text {
     padding: 1vw 1.3vw;
     font-weight: 200;
     font-size: 2vw;
     line-height: 3.4vw;
   }
-  .FeaturesTable .desktop-tablet hr {
-    width: 49vw;
+  .FeaturesTable.desktop-tablet .container hr {
+    width: 48.8vw;
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg);
     -webkit-transform-origin: left;
             transform-origin: left;
     z-index: 100;
   }
-  .FeaturesTable .desktop-tablet .photo {
-    height: 30.6vw;
-    width: 43vw;
+  .FeaturesTable.desktop-tablet .container .photo {
+    height: 30.2vw;
+    width: 42.9vw;
     top: calc(100% + 1.7vw);
   }
   .TableLights {

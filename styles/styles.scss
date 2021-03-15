@@ -893,7 +893,13 @@ footer {
   .Promo .container .body .PromoBody .swiper-container .swiper-next {
     right: 0%;
   }
-  .Promo .container .body .PromoBody .swiper-container .swiper-pagination .swiper-pagination-bullet {
+  .Promo
+    .container
+    .body
+    .PromoBody
+    .swiper-container
+    .swiper-pagination
+    .swiper-pagination-bullet {
     width: 0.9vw;
     height: 0.9vw;
   }
@@ -945,14 +951,43 @@ footer {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 3.17vw;
+        position: relative;
         .header_icons {
-          display: none;
+          .icon{
+            display: none;
+          }
+          &.active{
+            margin-right: 2vw;
+            flex-grow: 1;
+            height: 3.8vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            .icon{
+              height: 100%;
+              width: 2.7vw;
+              &:nth-of-type(1){
+                display: block;
+                path{fill: white;}
+              }
+              &:nth-of-type(2){
+                display: block;
+                path{fill: white;}
+              }
+              &:nth-of-type(3){
+                display: block;
+                path{stroke: white;}
+              }
+            }
+            
+          }
         }
         .burger {
           display: block;
           width: 3.5vw;
           height: 3.5vw;
           position: relative;
+          transition: 0.2s;
           span {
             top: calc((100% - 0.26vw) / 2);
             left: 0;
@@ -981,6 +1016,9 @@ footer {
               left: 0;
               top: 0.8vw;
             }
+          }
+          &.active {
+            transform: rotate(90deg);
           }
         }
       }
@@ -1231,38 +1269,40 @@ footer {
   }
 
   .FeaturesTable {
-    padding-top: 7vw;
-    padding-bottom: 7.3vw;
     margin: 0;
-    .desktop-tablet {
-      width: 86.4%;
-      p {
-        &.title {
-          font-weight: 300;
-          font-size: 2.8vw;
-          line-height: 3.5vw;
+    margin-top: 7vw;
+    padding-bottom: 7.3vw;
+    &.desktop-tablet {
+      margin-bottom: 0;
+      .container {
+        width: 86.4%;
+        p {
+          &.title {
+            font-weight: 300;
+            font-size: 2.8vw;
+            line-height: 3.5vw;
+          }
+          &.text {
+            padding: 1vw 1.3vw;
+            font-weight: 200;
+            font-size: 2vw;
+            line-height: 3.4vw;
+          }
         }
-        &.text {
-          padding: 1vw 1.3vw;
-          font-weight: 200;
-          font-size: 2vw;
-          line-height: 3.4vw;
+        hr {
+          width: 48.8vw;
+          transform: rotate(90deg);
+          transform-origin: left;
+          z-index: 100;
         }
-      }
-      hr {
-        width: 49vw;
-        transform: rotate(90deg);
-        transform-origin: left;
-        z-index: 100;
-      }
-      .photo {
-        height: 30.6vw;
-        width: 43vw;
-        top: calc(100% + 1.7vw);
+        .photo {
+          height: 30.2vw;
+          width: 42.9vw;
+          top: calc(100% + 1.7vw);
+        }
       }
     }
   }
-
   .TableLights {
     padding-top: 28vw;
     padding-bottom: 24vw;
