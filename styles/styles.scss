@@ -951,35 +951,77 @@ footer {
         align-items: center;
         justify-content: space-between;
         margin-bottom: 3.17vw;
-        position: relative;
         .header_icons {
-          .icon{
-            display: none;
-          }
-          &.active{
-            margin-right: 2vw;
-            flex-grow: 1;
-            height: 3.8vw;
-            display: flex;
-            justify-content: flex-end;
-            align-items: center;
-            .icon{
-              height: 100%;
-              width: 2.7vw;
-              &:nth-of-type(1){
-                display: block;
-                path{fill: white;}
+          position: relative;
+          &.disable {
+            .icon {
+              position: absolute;
+              width: 3vw;
+              height: 3vw;
+              transition: 0.2s;
+              margin: 0;
+              opacity: 0;
+              svg {
+                width: 100%;
+                height: 100%;
               }
-              &:nth-of-type(2){
-                display: block;
-                path{fill: white;}
+              &:nth-of-type(1) {
+                transform: translateX(13vw) translateY(-3vw);
+                path {
+                  fill: white;
+                }
               }
-              &:nth-of-type(3){
-                display: block;
-                path{stroke: white;}
+              &:nth-of-type(2) {
+                transform: translateX(18vw) translateY(-3vw);
+                transition-delay: 0.1s;
+                path {
+                  fill: white;
+                }
+              }
+              &:nth-of-type(3) {
+                transform: translateX(23vw) translateY(-3vw);
+                transition-delay: 0.2s;
+
+                path {
+                  stroke: white;
+                }
               }
             }
-            
+          }
+          &.active {
+            .icon {
+              position: absolute;
+              width: 3vw;
+              height: 3vw;
+              transition: 0.2s;
+              margin: 0;
+              opacity: 0;
+              svg {
+                width: 100%;
+                height: 100%;
+              }
+              opacity: 1;
+              &:nth-of-type(1) {
+                transform: translateX(13vw);
+                transition-delay: 0.2s;
+                path {
+                  fill: white;
+                }
+              }
+              &:nth-of-type(2) {
+                transform: translateX(18vw);
+                transition-delay: 0.1s;
+                path {
+                  fill: white;
+                }
+              }
+              &:nth-of-type(3) {
+                transform: translateX(23vw);
+                path {
+                  stroke: white;
+                }
+              }
+            }
           }
         }
         .burger {
@@ -1518,8 +1560,89 @@ footer {
       header {
         padding: 6.13vw 0;
         margin-bottom: 7.2vw;
+        .logo {
+          transition: 1s;
+          svg {
+            z-index: 1;
+          }
+          &::after {
+            position: absolute;
+            content: "";
+            height: 25px;
+            width: 100%;
+            background-color: #474c48;
+            z-index: 0;
+            right: -75%;
+            transition: 0.2s;
+          }
+          &.active {
+            &::after {
+              right: 0;
+            }
+          }
+        }
         .header_icons {
-          display: none;
+          &.disable {
+            .icon {
+              position: absolute;
+              width: 7vw;
+              height: 7vw;
+              transition: 0.2s;
+              margin: 0;
+              opacity: 0;
+              svg {
+                width: 100%;
+                height: 100%;
+              }
+              &:nth-of-type(1) {
+                transform: translateX(-20vw) translateY(-6vw);
+                path {
+                  fill: white;
+                }
+              }
+              &:nth-of-type(2) {
+                transform: translateX(-10vw) translateY(-6vw);
+                transition-delay: 0.1s;
+                path {
+                  fill: white;
+                }
+              }
+              &:nth-of-type(3) {
+                transform: translateX(0vw) translateY(-6vw);
+                transition-delay: 0.2s;
+
+                path {
+                  stroke: white;
+                }
+              }
+            }
+          }
+          &.active {
+            .icon {
+              position: absolute;
+              width: 7vw;
+              height: 7vw;
+              transition: 0.2s;
+              margin: 0;
+              opacity: 0;
+              svg {
+                width: 100%;
+                height: 100%;
+              }
+              opacity: 1;
+              &:nth-of-type(1) {
+                transform: translateX(-20vw);
+                transition-delay: 0.2s;
+              }
+              &:nth-of-type(2) {
+                transform: translateX(-10vw);
+                transition-delay: 0.1s;
+              }
+              &:nth-of-type(3) {
+                transform: translateX(0vw);
+              }
+            }
+          }
         }
         .burger {
           width: 7.2vw;

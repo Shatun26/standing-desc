@@ -1165,45 +1165,83 @@ footer .container .bottomLine span {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 3.17vw;
+  }
+  .Promo .container header .header_icons {
     position: relative;
   }
-  .Promo .container header .header_icons .icon {
-    display: none;
+  .Promo .container header .header_icons.disable .icon {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+    opacity: 0;
   }
-  .Promo .container header .header_icons.active {
-    margin-right: 2vw;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    height: 3.8vw;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .Promo .container header .header_icons.disable .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(1) {
+    -webkit-transform: translateX(13vw) translateY(-3vw);
+            transform: translateX(13vw) translateY(-3vw);
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(1) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(2) {
+    -webkit-transform: translateX(18vw) translateY(-3vw);
+            transform: translateX(18vw) translateY(-3vw);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(2) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(3) {
+    -webkit-transform: translateX(23vw) translateY(-3vw);
+            transform: translateX(23vw) translateY(-3vw);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(3) path {
+    stroke: white;
   }
   .Promo .container header .header_icons.active .icon {
+    position: absolute;
+    width: 3vw;
+    height: 3vw;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+    opacity: 0;
+    opacity: 1;
+  }
+  .Promo .container header .header_icons.active .icon svg {
+    width: 100%;
     height: 100%;
-    width: 2.7vw;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(1) {
-    display: block;
+    -webkit-transform: translateX(13vw);
+            transform: translateX(13vw);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(1) path {
     fill: white;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(2) {
-    display: block;
+    -webkit-transform: translateX(18vw);
+            transform: translateX(18vw);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(2) path {
     fill: white;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(3) {
-    display: block;
+    -webkit-transform: translateX(23vw);
+            transform: translateX(23vw);
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(3) path {
     stroke: white;
@@ -1732,8 +1770,94 @@ footer .container .bottomLine span {
     padding: 6.13vw 0;
     margin-bottom: 7.2vw;
   }
-  .Promo .container header .header_icons {
-    display: none;
+  .Promo .container header .logo {
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .Promo .container header .logo svg {
+    z-index: 1;
+  }
+  .Promo .container header .logo::after {
+    position: absolute;
+    content: "";
+    height: 25px;
+    width: 100%;
+    background-color: #474c48;
+    z-index: 0;
+    right: -75%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .Promo .container header .logo.active::after {
+    right: 0;
+  }
+  .Promo .container header .header_icons.disable .icon {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+    opacity: 0;
+  }
+  .Promo .container header .header_icons.disable .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(1) {
+    -webkit-transform: translateX(-20vw) translateY(-6vw);
+            transform: translateX(-20vw) translateY(-6vw);
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(1) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(2) {
+    -webkit-transform: translateX(-10vw) translateY(-6vw);
+            transform: translateX(-10vw) translateY(-6vw);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(2) path {
+    fill: white;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(3) {
+    -webkit-transform: translateX(0vw) translateY(-6vw);
+            transform: translateX(0vw) translateY(-6vw);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .Promo .container header .header_icons.disable .icon:nth-of-type(3) path {
+    stroke: white;
+  }
+  .Promo .container header .header_icons.active .icon {
+    position: absolute;
+    width: 7vw;
+    height: 7vw;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    margin: 0;
+    opacity: 0;
+    opacity: 1;
+  }
+  .Promo .container header .header_icons.active .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(1) {
+    -webkit-transform: translateX(-20vw);
+            transform: translateX(-20vw);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(2) {
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+  }
+  .Promo .container header .header_icons.active .icon:nth-of-type(3) {
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
   }
   .Promo .container header .burger {
     width: 7.2vw;
