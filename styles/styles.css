@@ -88,7 +88,7 @@ select {
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   overflow-x: hidden;
 }
 
@@ -188,7 +188,7 @@ hr {
 
 .Promo::before {
   position: absolute;
-  content: "";
+  content: '';
   z-index: -1;
   left: 0;
   top: 0;
@@ -242,7 +242,7 @@ hr {
   display: grid;
   -ms-grid-columns: 62.8% 37.2%;
       grid-template-columns: 62.8% 37.2%;
-      grid-template-areas: "title reserveForm" "slider reserveForm";
+      grid-template-areas: 'title reserveForm' 'slider reserveForm';
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -275,7 +275,7 @@ hr {
 
 .Promo .container .body h1 > span::before {
   position: absolute;
-  content: "";
+  content: '';
   width: 4.7vw;
   height: 0.24vw;
   background-color: #bc915f;
@@ -371,7 +371,7 @@ hr {
 
 .Promo .container .body .swiper-container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
   position: absolute;
-  content: "";
+  content: '';
   top: 0;
   left: 0;
   width: 100%;
@@ -544,7 +544,7 @@ hr {
 
 .DeskInfo .photo span:first-of-type::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   width: 14.27vw;
@@ -553,7 +553,7 @@ hr {
 
 .DeskInfo .photo span:first-of-type::after {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   width: 12.27vw;
@@ -567,7 +567,7 @@ hr {
 
 .DeskInfo .photo span:last-of-type::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   width: 12.27vw;
@@ -577,7 +577,7 @@ hr {
 
 .DeskInfo .photo span:last-of-type::after {
   position: absolute;
-  content: "";
+  content: '';
   right: 0;
   background-color: inherit;
   height: 100%;
@@ -648,7 +648,7 @@ hr {
 
 .PhoneCharger .photo span:first-of-type::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   right: 0;
@@ -658,7 +658,7 @@ hr {
 
 .PhoneCharger .photo span:first-of-type::after {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   right: 0;
@@ -673,7 +673,7 @@ hr {
 
 .PhoneCharger .photo span:last-of-type::before {
   position: absolute;
-  content: "";
+  content: '';
   background-color: inherit;
   height: 100%;
   width: 12.27vw;
@@ -683,7 +683,7 @@ hr {
 
 .PhoneCharger .photo span:last-of-type::after {
   position: absolute;
-  content: "";
+  content: '';
   left: 0;
   background-color: inherit;
   height: 100%;
@@ -734,27 +734,27 @@ hr {
   display: none;
 }
 
-.FeaturesTable.desktop-tablet {
-  padding-top: 7vw;
-  padding-bottom: 7.3vw;
-  background-color: #474c48;
-  margin-bottom: 23vw;
+.FeaturesTable {
+  background: -webkit-gradient(linear, left top, left bottom, from(#474c48), color-stop(55%, #474c48), color-stop(55%, white));
+  background: linear-gradient(180deg, #474c48 0%, #474c48 55%, white 55%);
+  color: white;
+  padding-top: 8.8vw;
+  margin-bottom: 4vw;
 }
 
-.FeaturesTable.desktop-tablet .container {
-  position: relative;
+.FeaturesTable .container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  position: relative;
 }
 
-.FeaturesTable.desktop-tablet .container p {
+.FeaturesTable .container p {
   text-align: center;
-  color: #fff;
 }
 
-.FeaturesTable.desktop-tablet .container p.title {
+.FeaturesTable .container .title {
   padding-bottom: 1.3vw;
   font-weight: 400;
   font-size: 2vw;
@@ -762,46 +762,33 @@ hr {
   border-bottom: 2px solid #bc915f;
 }
 
-.FeaturesTable.desktop-tablet .container p.text {
-  padding: 1vw 1.3vw;
+.FeaturesTable .container .tLine::after {
+  position: absolute;
+  content: '';
+  background-color: #bc915f;
+  height: 100%;
+  width: 2px;
+  right: calc((50%) - 1px);
+  top: 0;
+}
+
+.FeaturesTable .container .text {
+  margin-top: 1.3vw;
+  padding: 0 1.56vw;
+  margin-bottom: 2.6vw;
   font-weight: 200;
   font-size: 1.25vw;
   line-height: 1.9vw;
 }
 
-.FeaturesTable.desktop-tablet .container hr {
-  position: absolute;
-  top: 0;
-  left: calc((100% - 2px) / 2);
-  height: 2px;
-  width: 34.55vw;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: left;
-          transform-origin: left;
-  z-index: 100;
-}
-
-.FeaturesTable.desktop-tablet .container .photo {
-  position: absolute;
-  height: 22.4vw;
-  width: 32.2vw;
-  top: calc(100% + 2.6vw);
-}
-
-.FeaturesTable.desktop-tablet .container .photo:first-of-type {
-  left: 0;
-}
-
-.FeaturesTable.desktop-tablet .container .photo:last-of-type {
-  right: 0;
-}
-
-.FeaturesTable.desktop-tablet .container .photo img {
+.FeaturesTable .container .photo {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+
+.FeaturesTable .container .photo img {
+  width: 100%;
+  height: 100%;
 }
 
 .TableLights {
@@ -1265,7 +1252,7 @@ footer .container .bottomLine span {
   }
   .Promo .container header .burger span::before {
     position: absolute;
-    content: "";
+    content: '';
     border-radius: 0.65vw;
     width: 3.5vw;
     height: 0.26vw;
@@ -1275,7 +1262,7 @@ footer .container .bottomLine span {
   }
   .Promo .container header .burger span::after {
     position: absolute;
-    content: "";
+    content: '';
     border-radius: 0.65vw;
     width: 3.5vw;
     height: 0.26vw;
@@ -1290,7 +1277,7 @@ footer .container .bottomLine span {
   .Promo .container .body {
     -ms-grid-columns: 50% 50%;
         grid-template-columns: 50% 50%;
-        grid-template-areas: "title title" "slider reserveForm";
+        grid-template-areas: 'title title' 'slider reserveForm';
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
@@ -1317,7 +1304,7 @@ footer .container .bottomLine span {
   }
   .Promo .container .body h1 > span::before {
     position: absolute;
-    content: "";
+    content: '';
     width: 13.3vw;
     height: 0.7vw;
     background-color: #bc915f;
@@ -1534,41 +1521,24 @@ footer .container .bottomLine span {
   }
   .FeaturesTable {
     margin: 0;
-    margin-top: 7vw;
-    padding-bottom: 7.3vw;
+    padding-bottom: 3.2vw;
   }
-  .FeaturesTable.desktop-tablet {
-    margin-bottom: 0;
-  }
-  .FeaturesTable.desktop-tablet .container {
+  .FeaturesTable .container {
     width: 86.4%;
   }
-  .FeaturesTable.desktop-tablet .container p.title {
+  .FeaturesTable .container p.title {
     font-weight: 300;
     font-size: 2.8vw;
     line-height: 3.5vw;
   }
-  .FeaturesTable.desktop-tablet .container p.text {
-    padding: 1vw 1.3vw;
+  .FeaturesTable .container p.text {
+    padding: 2vw 1.5vw;
+    margin: 0;
     font-weight: 200;
     font-size: 2vw;
     line-height: 3.4vw;
   }
-  .FeaturesTable.desktop-tablet .container hr {
-    width: 48.8vw;
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    z-index: 100;
-  }
-  .FeaturesTable.desktop-tablet .container .photo {
-    height: 30.2vw;
-    width: 42.9vw;
-    top: calc(100% + 1.7vw);
-  }
   .TableLights {
-    padding-top: 28vw;
     padding-bottom: 24vw;
     background-color: #fff;
     margin-bottom: 18vw;
@@ -1779,7 +1749,7 @@ footer .container .bottomLine span {
   }
   .Promo .container header .logo::after {
     position: absolute;
-    content: "";
+    content: '';
     height: 25px;
     width: 100%;
     background-color: #474c48;
@@ -2075,50 +2045,45 @@ footer .container .bottomLine span {
   .BluetoothSpeakers .photo {
     display: none;
   }
-  .FeaturesTable.desktop-tablet {
+  .FeaturesTable {
+    background: #474c48;
+    padding: 0;
+  }
+  .FeaturesTable .container {
+    width: 100%;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .FeaturesTable .container .photo-first {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .FeaturesTable .container .text-first {
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .FeaturesTable .container .photo-second {
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .FeaturesTable .container .tLine::after {
     display: none;
   }
-  .FeaturesTable.mobile {
-    display: block;
-    margin: 0;
-    padding: 0;
-    margin: 11.6vw 0;
-    background-repeat: no-repeat;
-    background-size: auto 70.3vw;
-    background-position: center top;
-    padding-top: 76vw;
-  }
-  .FeaturesTable.mobile .container {
-    background-color: #474c48;
-    display: block;
-    width: 100%;
-    color: #fff;
-  }
-  .FeaturesTable.mobile .container p:first-of-type {
+  .FeaturesTable .container p.title {
     font-size: 5.8vw;
-    line-height: 8.7vw;
-    text-align: center;
-    font-weight: 500;
-    width: 90.3%;
+    padding: 6vw 0;
+    padding-bottom: 7.5vw;
+    width: 90%;
     margin: 0 auto;
+    font-weight: 600;
   }
-  .FeaturesTable.mobile .container hr {
-    margin: 5.8vw auto;
-    width: 90.3%;
-  }
-  .FeaturesTable.mobile .container p:last-of-type {
-    font-weight: 200;
-    font-size: 4vw;
-    line-height: 160.4%;
-    width: 90.3%;
-    text-align: justify;
+  .FeaturesTable .container p.text {
+    font-size: 3.9vw;
+    padding: 6vw 0;
+    width: 90%;
     margin: 0 auto;
-  }
-  .mob-1 {
-    background-image: url(./../prepare/StorageNew.png);
-  }
-  .mob-2 {
-    background-image: url(./../prepare/DeskPadNew.png);
+    line-height: 160%;
+    text-align: left;
   }
   .TableLights {
     background-color: #474c48;
@@ -2126,6 +2091,7 @@ footer .container .bottomLine span {
     margin: 0;
     padding: 0;
     margin: 11.6vw 0;
+    margin-top: 0;
     background-image: url(./../prepare/RGBLights.png);
     background-repeat: no-repeat;
     background-size: auto 35.2vw;

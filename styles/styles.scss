@@ -89,7 +89,7 @@ $mainBrown: #bc915f;
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   overflow-x: hidden;
 }
 
@@ -160,7 +160,7 @@ hr {
   position: relative;
   &::before {
     position: absolute;
-    content: "";
+    content: '';
     z-index: -1;
     left: 0;
     top: 0;
@@ -195,8 +195,8 @@ hr {
       display: grid;
       grid-template-columns: 62.8% 37.2%;
       grid-template-areas:
-        "title reserveForm"
-        "slider reserveForm";
+        'title reserveForm'
+        'slider reserveForm';
       align-items: center;
       padding-bottom: 2.6vw;
       h1 {
@@ -218,7 +218,7 @@ hr {
           left: 5.7vw;
           &::before {
             position: absolute;
-            content: "";
+            content: '';
             width: 4.7vw;
             height: 0.24vw;
             background-color: $mainBrown;
@@ -301,7 +301,7 @@ hr {
               opacity: 0.8;
               &::after {
                 position: absolute;
-                content: "";
+                content: '';
                 top: 0;
                 left: 0;
                 width: 100%;
@@ -427,7 +427,7 @@ hr {
         top: 4.5vw;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           width: 14.27vw;
@@ -435,7 +435,7 @@ hr {
         }
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           width: 12.27vw;
@@ -447,7 +447,7 @@ hr {
         left: 28.38vw;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           width: 12.27vw;
@@ -456,7 +456,7 @@ hr {
         }
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           right: 0;
           background-color: inherit;
           height: 100%;
@@ -519,7 +519,7 @@ hr {
         left: 28.38vw;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           right: 0;
@@ -528,7 +528,7 @@ hr {
         }
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           right: 0;
@@ -541,7 +541,7 @@ hr {
         left: 0;
         &::before {
           position: absolute;
-          content: "";
+          content: '';
           background-color: inherit;
           height: 100%;
           width: 12.27vw;
@@ -550,7 +550,7 @@ hr {
         }
         &::after {
           position: absolute;
-          content: "";
+          content: '';
           left: 0;
           background-color: inherit;
           height: 100%;
@@ -601,58 +601,57 @@ hr {
   display: none;
 }
 
-.FeaturesTable.desktop-tablet {
-  padding-top: 7vw;
-  padding-bottom: 7.3vw;
-  background-color: $mainGray;
-  margin-bottom: 23vw;
+.FeaturesTable {
+  background: linear-gradient(
+    180deg,
+    #474c48 0%,
+    #474c48 55%,
+    rgba(255, 255, 255, 1) 55%
+  );
+  color: white;
+  padding-top: 8.8vw;
+  margin-bottom: 4vw;
   .container {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
     p {
       text-align: center;
-      color: #fff;
-      &.title {
-        padding-bottom: 1.3vw;
-        font-weight: 400;
-        font-size: 2vw;
-        line-height: 2.5vw;
-        border-bottom: 2px solid $mainBrown;
-      }
-      &.text {
-        padding: 1vw 1.3vw;
-        font-weight: 200;
-        font-size: 1.25vw;
-        line-height: 1.9vw;
+    }
+
+    .title {
+      padding-bottom: 1.3vw;
+      font-weight: 400;
+      font-size: 2vw;
+      line-height: 2.5vw;
+      border-bottom: 2px solid $mainBrown;
+    }
+
+    .tLine {
+      &::after {
+        position: absolute;
+        content: '';
+        background-color: $mainBrown;
+        height: 100%;
+        width: 2px;
+        right: calc((50%) - 1px);
+        top: 0;
       }
     }
-    hr {
-      position: absolute;
-      top: 0;
-      left: calc((100% - 2px) / 2);
-      // left: 49.999995%;
-      height: 2px;
-      width: 34.55vw;
-      transform: rotate(90deg);
-      transform-origin: left;
-      z-index: 100;
+    .text {
+      margin-top: 1.3vw;
+      padding: 0 1.56vw;
+      margin-bottom: 2.6vw;
+      font-weight: 200;
+      font-size: 1.25vw;
+      line-height: 1.9vw;
     }
     .photo {
-      position: absolute;
-      height: 22.4vw;
-      width: 32.2vw;
-      top: calc(100% + 2.6vw);
-      &:first-of-type {
-        left: 0;
-      }
-      &:last-of-type {
-        right: 0;
-      }
+      width: 100%;
+      height: 100%;
       img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
       }
     }
   }
@@ -1040,7 +1039,7 @@ footer {
             background-color: #fff;
             &::before {
               position: absolute;
-              content: "";
+              content: '';
               border-radius: 0.65vw;
               width: 3.5vw;
               height: 0.26vw;
@@ -1050,7 +1049,7 @@ footer {
             }
             &::after {
               position: absolute;
-              content: "";
+              content: '';
               border-radius: 0.65vw;
               width: 3.5vw;
               height: 0.26vw;
@@ -1067,8 +1066,8 @@ footer {
       .body {
         grid-template-columns: 50% 50%;
         grid-template-areas:
-          "title title"
-          "slider reserveForm";
+          'title title'
+          'slider reserveForm';
         align-items: end;
         gap: 0;
         // padding-bottom: 2.6vw;
@@ -1090,7 +1089,7 @@ footer {
             left: 12vw;
             &::before {
               position: absolute;
-              content: "";
+              content: '';
               width: 13.3vw;
               height: 0.7vw;
               background-color: $mainBrown;
@@ -1312,41 +1311,26 @@ footer {
 
   .FeaturesTable {
     margin: 0;
-    margin-top: 7vw;
-    padding-bottom: 7.3vw;
-    &.desktop-tablet {
-      margin-bottom: 0;
-      .container {
-        width: 86.4%;
-        p {
-          &.title {
-            font-weight: 300;
-            font-size: 2.8vw;
-            line-height: 3.5vw;
-          }
-          &.text {
-            padding: 1vw 1.3vw;
-            font-weight: 200;
-            font-size: 2vw;
-            line-height: 3.4vw;
-          }
+    padding-bottom: 3.2vw;
+    .container {
+      width: 86.4%;
+      p {
+        &.title {
+          font-weight: 300;
+          font-size: 2.8vw;
+          line-height: 3.5vw;
         }
-        hr {
-          width: 48.8vw;
-          transform: rotate(90deg);
-          transform-origin: left;
-          z-index: 100;
-        }
-        .photo {
-          height: 30.2vw;
-          width: 42.9vw;
-          top: calc(100% + 1.7vw);
+        &.text {
+          padding: 2vw 1.5vw;
+          margin: 0;
+          font-weight: 200;
+          font-size: 2vw;
+          line-height: 3.4vw;
         }
       }
     }
   }
   .TableLights {
-    padding-top: 28vw;
     padding-bottom: 24vw;
     background-color: #fff;
     margin-bottom: 18vw;
@@ -1567,7 +1551,7 @@ footer {
           }
           &::after {
             position: absolute;
-            content: "";
+            content: '';
             height: 25px;
             width: 100%;
             background-color: #474c48;
@@ -1873,51 +1857,43 @@ footer {
     }
   }
 
-  .FeaturesTable.desktop-tablet {
-    display: none;
-  }
-
-  .FeaturesTable.mobile {
-    display: block;
-    margin: 0;
+  .FeaturesTable {
+    background: #474c48;
     padding: 0;
-    margin: 11.6vw 0;
-    background-repeat: no-repeat;
-    background-size: auto 70.3vw;
-    background-position: center top;
-    padding-top: 76vw;
     .container {
-      background-color: $mainGray;
-      display: block;
       width: 100%;
-      color: #fff;
-      p:first-of-type {
+      grid-template-columns: 1fr;
+      .photo-first {
+        grid-row: 1;
+      }
+      .text-first {
+        grid-row: 3;
+      }
+      .photo-second {
+        grid-row: 4;
+      }
+      .tLine {
+        &::after {
+          display: none;
+        }
+      }
+      p.title {
         font-size: 5.8vw;
-        line-height: 8.7vw;
-        text-align: center;
-        font-weight: 500;
-        width: 90.3%;
+        padding: 6vw 0;
+        padding-bottom: 7.5vw;
+        width: 90%;
         margin: 0 auto;
+        font-weight: 600;
       }
-      hr {
-        margin: 5.8vw auto;
-        width: 90.3%;
-      }
-      p:last-of-type {
-        font-weight: 200;
-        font-size: 4vw;
-        line-height: 160.4%;
-        width: 90.3%;
-        text-align: justify;
+      p.text{
+        font-size: 3.9vw;
+        padding: 6vw 0;
+        width: 90%;
         margin: 0 auto;
+        line-height: 160%;
+        text-align: left;
       }
     }
-  }
-  .mob-1 {
-    background-image: url(./../prepare/StorageNew.png);
-  }
-  .mob-2 {
-    background-image: url(./../prepare/DeskPadNew.png);
   }
 
   .TableLights {
@@ -1926,6 +1902,7 @@ footer {
     margin: 0;
     padding: 0;
     margin: 11.6vw 0;
+    margin-top: 0;
     background-image: url(./../prepare/RGBLights.png);
     background-repeat: no-repeat;
     background-size: auto 35.2vw;
