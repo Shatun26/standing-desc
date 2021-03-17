@@ -1164,6 +1164,7 @@ footer .container .bottomLine span {
     position: absolute;
     width: 3vw;
     height: 3vw;
+    min-height: 6vw;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     margin: 0;
