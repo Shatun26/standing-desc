@@ -1201,7 +1201,7 @@ footer .container .bottomLine span {
   .Promo .container header .header_icons.active .icon {
     position: absolute;
     width: 3vw;
-    height: 3vw;
+    min-height: 6vw;
     -webkit-transition: 0.2s;
     transition: 0.2s;
     margin: 0;
