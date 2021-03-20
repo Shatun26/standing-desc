@@ -1,0 +1,761 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1vw;
+  background: #474c48;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bc915f;
+}
+
+body {
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+.container {
+  min-width: 640px;
+  max-width: 33vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main {
+  font-family: 'Montserrat';
+  color: white;
+  background-color: #474c48;
+  padding-top: 67px;
+  padding-bottom: 128px;
+}
+
+body main .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 36px;
+}
+
+body main .title span {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+body main .title-form {
+  width: 100%;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #bc915f;
+}
+
+body main .title-form h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+body main .title-form .product,
+body main .title-form .reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .title-form .product {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+body main .title-form .product h1,
+body main .title-form .product h2 {
+  line-height: 51px;
+  font-size: 24px;
+  font-weight: 200;
+  text-transform: uppercase;
+}
+
+body main .title-form .reservation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .title-form .reservation h1,
+body main .title-form .reservation h2 {
+  font-size: 24px;
+}
+
+body main form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main form .billing__title {
+  font-size: 48px;
+  padding: 20px 0;
+}
+
+body main form .billing__form-group {
+  border-bottom: 1px solid #bc915f;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 0 20px;
+}
+
+body main form .billing__form-group #reservation-form-email,
+body main form .billing__form-group #reservation-form-address-1,
+body main form .billing__form-group #reservation-form-address-2,
+body main form .billing__form-group #reservation-form-card-holder,
+body main form .billing__form-group #reservation-form-card-details {
+  background-color: white;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  padding: 17px 31px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+body main form .billing__form-group #reservation-form-email::-webkit-input-placeholder,
+body main form .billing__form-group #reservation-form-address-1::-webkit-input-placeholder,
+body main form .billing__form-group #reservation-form-address-2::-webkit-input-placeholder,
+body main form .billing__form-group #reservation-form-card-holder::-webkit-input-placeholder,
+body main form .billing__form-group #reservation-form-card-details::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .billing__form-group #reservation-form-email:-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-address-1:-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-address-2:-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-card-holder:-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-card-details:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .billing__form-group #reservation-form-email::-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-address-1::-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-address-2::-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-card-holder::-ms-input-placeholder,
+body main form .billing__form-group #reservation-form-card-details::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .billing__form-group #reservation-form-email::placeholder,
+body main form .billing__form-group #reservation-form-address-1::placeholder,
+body main form .billing__form-group #reservation-form-address-2::placeholder,
+body main form .billing__form-group #reservation-form-card-holder::placeholder,
+body main form .billing__form-group #reservation-form-card-details::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .billing__form-group .billing__form-row input,
+body main form .billing__form-group .billing__form-row select {
+  font-size: 16px;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: none;
+  padding: 17px 31px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
+body main form .billing__form-group .billing__form-row select::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+}
+
+body main form .billing__form-group .billing__form-row input:-ms-input-placeholder,
+body main form .billing__form-group .billing__form-row select:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+}
+
+body main form .billing__form-group .billing__form-row input::-ms-input-placeholder,
+body main form .billing__form-group .billing__form-row select::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+}
+
+body main form .billing__form-group .billing__form-row input::placeholder,
+body main form .billing__form-group .billing__form-row select::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+  font-size: inherit;
+}
+
+body main form .billing__form-group .billing__form-row #reservation-form-country {
+  padding: 17px 31px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url(../prepare/country-vector.svg);
+  background-repeat: no-repeat;
+  background-size: 14px 7px;
+  background-position: 281px 28px;
+}
+
+body main form .card-element {
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: none;
+  padding: 17px 31px;
+  margin-bottom: 20px;
+  width: 100%;
+  background-color: white;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+body main form .card-element #reservation-form-card {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+}
+
+body main form .billing__info-row {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+body main form .billing__info-row p span {
+  color: green;
+}
+
+body main form #reservation-button {
+  background-color: #bc915f;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  border: none;
+  padding: 15px 60px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+body footer {
+  background-color: #363736;
+  padding: 57px 0;
+}
+
+body footer .container {
+  max-width: 63%;
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+body footer .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .container .logo svg {
+  width: 46px;
+  height: 46px;
+  margin-right: 22px;
+}
+
+body footer .container .logo span {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+body footer .container hr {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background-color: #bc915f;
+  border: none;
+  outline: none;
+  height: 2px;
+  margin: 0 23px;
+}
+
+body footer .container .social-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body footer .container .social-icons .s__icon {
+  width: 30px;
+  height: 30px;
+}
+
+body footer .container .social-icons .s__icon:first-of-type {
+  margin-right: 17px;
+}
+
+body footer .container .social-icons .s__icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  body .container {
+    min-width: 90%;
+    max-width: 90%;
+  }
+  body main {
+    font-family: 'Montserrat';
+    color: white;
+    background-color: #474c48;
+    padding-top: 8.7vw;
+    padding-bottom: 16.6vw;
+  }
+  body main .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 4.7vw;
+  }
+  body main .title span {
+    margin-top: 2.6vw;
+    font-size: 3.125vw;
+    font-weight: 600;
+  }
+  body main .title-form {
+    width: 100%;
+    padding-bottom: 2.6vw;
+    border-bottom: 1px solid #bc915f;
+  }
+  body main .title-form h1 {
+    text-align: center;
+    font-size: 6.25vw;
+  }
+  body main .title-form .product,
+  body main .title-form .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .title-form .product {
+    margin-bottom: 0.65vw;
+    margin-top: 1.3vw;
+  }
+  body main .title-form .product h1,
+  body main .title-form .product h2 {
+    line-height: 6.6vw;
+    font-size: 3.124vw;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  body main .title-form .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .title-form .reservation h1,
+  body main .title-form .reservation h2 {
+    font-size: 3.126vw;
+  }
+  body main form {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main form .billing__title {
+    font-size: 6.25vw;
+    padding: 2.6vw 0;
+  }
+  body main form .billing__form-group {
+    width: 100%;
+    border-bottom: 1px solid #bc915f;
+    margin-bottom: 3.9vw;
+    padding-bottom: 2.6vw;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 0 2.6vw;
+  }
+  body main form .billing__form-group #reservation-form-email,
+  body main form .billing__form-group #reservation-form-address-1,
+  body main form .billing__form-group #reservation-form-address-2,
+  body main form .billing__form-group #reservation-form-card-holder,
+  body main form .billing__form-group #reservation-form-card-details {
+    background-color: white;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    margin-bottom: 2.6vw;
+    border-radius: 0.65vw;
+    padding: 2.2vw 4vw;
+    outline: none;
+    border: none;
+    font-size: 2vw;
+    -webkit-box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+  }
+  body main form .billing__form-group #reservation-form-email::-webkit-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-1::-webkit-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-2::-webkit-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-holder::-webkit-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-details::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group #reservation-form-email:-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-1:-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-2:-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-holder:-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-details:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group #reservation-form-email::-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-1::-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-address-2::-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-holder::-ms-input-placeholder,
+  body main form .billing__form-group #reservation-form-card-details::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group #reservation-form-email::placeholder,
+  body main form .billing__form-group #reservation-form-address-1::placeholder,
+  body main form .billing__form-group #reservation-form-address-2::placeholder,
+  body main form .billing__form-group #reservation-form-card-holder::placeholder,
+  body main form .billing__form-group #reservation-form-card-details::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group .billing__form-row {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+  body main form .billing__form-group .billing__form-row input,
+  body main form .billing__form-group .billing__form-row select {
+    font-size: 2vw;
+    -webkit-box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+    border-radius: 0.65vw;
+    border: none;
+    padding: 2.2vw 4vw;
+    margin-bottom: 2.6vw;
+    width: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  body main form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
+  body main form .billing__form-group .billing__form-row select::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group .billing__form-row input:-ms-input-placeholder,
+  body main form .billing__form-group .billing__form-row select:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group .billing__form-row input::-ms-input-placeholder,
+  body main form .billing__form-group .billing__form-row select::-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group .billing__form-row input::placeholder,
+  body main form .billing__form-group .billing__form-row select::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: inherit;
+  }
+  body main form .billing__form-group .billing__form-row #reservation-form-country {
+    padding: 2.2vw 4vw;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-image: url(../prepare/country-vector.svg);
+    background-repeat: no-repeat;
+    background-size: 1.8vw 0.9vw;
+    background-position: 85vw 3.65vw;
+  }
+  body main form .card-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 0.65vw;
+    border: none;
+    padding: 2.2vw 4vw;
+    margin-bottom: 2.6vw;
+    width: 100%;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.3);
+  }
+  body main form .card-element #reservation-form-card {
+    font-size: 2vw;
+    -ms-flex-item-align: start;
+        -ms-grid-row-align: start;
+        align-self: start;
+  }
+  body main form .billing__info-row {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-weight: 300;
+    font-size: 3.125vw;
+  }
+  body main form .billing__info-row p span {
+    color: green;
+  }
+  body main form #reservation-button {
+    background-color: #bc915f;
+    -webkit-box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+    border-radius: 0.65vw;
+    border: none;
+    padding: 1.95vw 7.8vw;
+    font-size: 2.3vw;
+    margin-top: 3.9vw;
+  }
+  body footer {
+    background-color: #363736;
+    padding: 7.4vw 0;
+  }
+  body footer .container {
+    max-width: 90%;
+    min-width: 90%;
+    margin: 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  body footer .container .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .container .logo svg {
+    width: 6vw;
+    height: 6vw;
+    margin-right: 2.8vw;
+  }
+  body footer .container .logo span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.125vw;
+    line-height: 2.8vw;
+    color: #ffffff;
+  }
+  body footer .container hr {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background-color: #bc915f;
+    border: none;
+    outline: none;
+    height: 2px;
+    margin: 0 3vw;
+  }
+  body footer .container .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer .container .social-icons .s__icon {
+    width: 3.9vw;
+    height: 3.9vw;
+  }
+  body footer .container .social-icons .s__icon:first-of-type {
+    margin-right: 2.2vw;
+  }
+  body footer .container .social-icons .s__icon svg {
+    width: 3.9vw;
+    height: 3.9vw;
+  }
+}
+/*# sourceMappingURL=style-buy-page.css.map */
