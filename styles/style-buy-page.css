@@ -283,7 +283,7 @@ body main form .billing__form-group .billing__form-row select {
   margin-bottom: 20px;
   width: 100%;
   background-color: white;
-  color: rgba(0, 0, 0, 0.3);
+  color: black;
 }
 
 body main form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
@@ -311,6 +311,7 @@ body main form .billing__form-group .billing__form-row select::placeholder {
 }
 
 body main form .billing__form-group .billing__form-row #reservation-form-country {
+  color: rgba(0, 0, 0, 0.3);
   padding: 17px 31px;
   -webkit-appearance: none;
      -moz-appearance: none;
@@ -614,7 +615,7 @@ body footer .container .social-icons .s__icon svg {
     margin-bottom: 2.6vw;
     width: 100%;
     background-color: white;
-    color: rgba(0, 0, 0, 0.3);
+    color: black;
   }
   body main form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
   body main form .billing__form-group .billing__form-row select::-webkit-input-placeholder {

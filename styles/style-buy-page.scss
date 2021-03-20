@@ -194,7 +194,7 @@ body {
         .billing__form-row {
           input,
           select {
-          font-size: 16px;
+            font-size: 16px;
 
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
             border-radius: 5px;
@@ -207,9 +207,10 @@ body {
               color: rgba(0, 0, 0, 0.3);
               font-size: inherit;
             }
-            color: rgba(0, 0, 0, 0.3);
+            color: rgba(0, 0, 0, 1);
           }
           #reservation-form-country {
+            color: rgba(0, 0, 0, 0.3);
             padding: 17px 31px;
             appearance: none;
             background-image: url(../prepare/country-vector.svg);
@@ -415,11 +416,11 @@ body {
               margin-bottom: 2.6vw;
               width: 100%;
               background-color: white;
+              color: black;
               &::placeholder {
                 color: rgba(0, 0, 0, 0.3);
                 font-size: inherit;
               }
-              color: rgba(0, 0, 0, 0.3);
             }
             #reservation-form-country {
               padding: 2.2vw 4vw;
@@ -428,12 +429,10 @@ body {
               background-repeat: no-repeat;
               background-size: 1.8vw 0.9vw;
               background-position: 85vw 3.65vw;
-              
             }
           }
         }
         .card-element {
-
           display: flex;
           flex-direction: column;
           align-items: center;
