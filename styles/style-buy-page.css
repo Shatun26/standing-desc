@@ -112,6 +112,186 @@ html {
           align-items: center;
 }
 
+body header {
+  padding-top: 40px;
+  padding-bottom: 150px;
+  background: -webkit-gradient(linear, left top, right top, from(#474c48), color-stop(50%, #474c48), color-stop(50%, white));
+  background: linear-gradient(-270deg, #474c48 0%, #474c48 50%, white 50%);
+}
+
+body header .container {
+  width: 63%;
+  min-width: 1234px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 142px;
+}
+
+body header .container .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body header .container .logo svg {
+  width: 46px;
+  height: 46px;
+  margin-right: 22px;
+}
+
+body header .container .logo span {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #ffffff;
+}
+
+body header .container .header_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+body header .container .header_icons .icon {
+  outline: none;
+  width: 30px;
+  height: 30px;
+  margin-left: 17px;
+}
+
+body header .container .header_icons .icon svg {
+  width: 100%;
+}
+
+body header .container .header_icons .icon svg path {
+  fill: black;
+  opacity: 0.5;
+}
+
+body header .container .burger {
+  display: none;
+}
+
+body header .introdusing {
+  width: 63%;
+  min-width: 1234px;
+  max-width: 1234px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+body header .introdusing .introdusing-title {
+  margin-right: 22px;
+}
+
+body header .introdusing .introdusing-title h1 {
+  color: #fff;
+  grid-area: title;
+  font-size: 36px;
+  line-height: 44px;
+  font-style: normal;
+  font-weight: 300;
+  margin-bottom: 140px;
+}
+
+body header .introdusing .introdusing-title h1 > span {
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transform: scale(2.8);
+          transform: scale(2.8);
+  top: 20px;
+  left: 98px;
+}
+
+body header .introdusing .introdusing-title h1 > span::before {
+  position: absolute;
+  content: '';
+  width: 95px;
+  height: 5px;
+  background-color: #bc915f;
+  bottom: 8px;
+  right: 102%;
+}
+
+body header .introdusing .introdusing-title h1 > span > span {
+  color: #bc915f;
+}
+
+body header .introdusing .introdusing-title .table-img {
+  width: 405px;
+  height: 261px;
+  margin: 0 auto;
+}
+
+body header .introdusing .introdusing-title .table-img img {
+  width: 100%;
+  height: 100%;
+}
+
+body header .introdusing .purple-swan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333333;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 70px;
+}
+
+body header .introdusing .purple-swan p {
+  font-size: 18px;
+  line-height: 165%;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  font-weight: 300;
+}
+
+body header .introdusing .purple-swan p:first-of-type {
+  font-size: 36px;
+  line-height: 44px;
+  letter-spacing: -0.02em;
+  margin-bottom: 27px;
+  font-weight: 600;
+}
+
+body header .introdusing .purple-swan hr {
+  background-color: #bc915f;
+  height: 14px;
+  width: 100%;
+  margin-bottom: 38px;
+  border: none;
+  outline: none;
+}
+
 body main {
   font-family: 'Montserrat';
   color: white;
@@ -120,7 +300,86 @@ body main {
   padding-bottom: 128px;
 }
 
-body main .title {
+body main .about {
+  width: 64%;
+  min-width: 1234px;
+  max-width: 1234px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 24.83% 29.5% 27.6%;
+      grid-template-columns: 24.83% 29.5% 27.6%;
+  gap: 107px;
+  margin-bottom: 103px;
+}
+
+body main .about p {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 165%;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+
+body main .about .about-first img {
+  width: 79px;
+  height: 77px;
+  margin-right: 15px;
+}
+
+body main .about .about-second {
+  position: relative;
+}
+
+body main .about .about-second img {
+  width: 97px;
+  height: 88px;
+  margin-right: 27px;
+}
+
+body main .about .about-second::before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+  opacity: 0.2;
+  left: -54px;
+}
+
+body main .about .about-second::after {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 2px;
+  background-color: #fff;
+  opacity: 0.2;
+  top: 0;
+  right: -54px;
+}
+
+body main .about .about-third img {
+  width: 85px;
+  height: 90px;
+  margin-right: 40px;
+}
+
+body main .about .about-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+body main .about .about-logo span {
+  font-size: 31px;
+  font-family: 'Playfair' 'Display';
+}
+
+body main .container .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,25 +393,25 @@ body main .title {
   margin-bottom: 36px;
 }
 
-body main .title span {
+body main .container .title span {
   margin-top: 20px;
   font-size: 24px;
   font-weight: 600;
 }
 
-body main .title-form {
+body main .container .title-form {
   width: 100%;
   padding-bottom: 20px;
   border-bottom: 1px solid #bc915f;
 }
 
-body main .title-form h1 {
+body main .container .title-form h1 {
   text-align: center;
   font-size: 48px;
 }
 
-body main .title-form .product,
-body main .title-form .reservation {
+body main .container .title-form .product,
+body main .container .title-form .reservation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,20 +423,20 @@ body main .title-form .reservation {
           justify-content: space-between;
 }
 
-body main .title-form .product {
+body main .container .title-form .product {
   margin-bottom: 5px;
   margin-top: 10px;
 }
 
-body main .title-form .product h1,
-body main .title-form .product h2 {
+body main .container .title-form .product h1,
+body main .container .title-form .product h2 {
   line-height: 51px;
   font-size: 24px;
   font-weight: 200;
   text-transform: uppercase;
 }
 
-body main .title-form .reservation {
+body main .container .title-form .reservation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -186,12 +445,12 @@ body main .title-form .reservation {
           align-items: center;
 }
 
-body main .title-form .reservation h1,
-body main .title-form .reservation h2 {
+body main .container .title-form .reservation h1,
+body main .container .title-form .reservation h2 {
   font-size: 24px;
 }
 
-body main form {
+body main .container form {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,12 +464,12 @@ body main form {
           align-items: center;
 }
 
-body main form .billing__title {
+body main .container form .billing__title {
   font-size: 48px;
   padding: 20px 0;
 }
 
-body main form .billing__form-group {
+body main .container form .billing__form-group {
   border-bottom: 1px solid #bc915f;
   margin-bottom: 30px;
   padding-bottom: 20px;
@@ -221,11 +480,11 @@ body main form .billing__form-group {
   gap: 0 20px;
 }
 
-body main form .billing__form-group #reservation-form-email,
-body main form .billing__form-group #reservation-form-address-1,
-body main form .billing__form-group #reservation-form-address-2,
-body main form .billing__form-group #reservation-form-card-holder,
-body main form .billing__form-group #reservation-form-card-details {
+body main .container form .billing__form-group #reservation-form-email,
+body main .container form .billing__form-group #reservation-form-address-1,
+body main .container form .billing__form-group #reservation-form-address-2,
+body main .container form .billing__form-group #reservation-form-card-holder,
+body main .container form .billing__form-group #reservation-form-card-details {
   background-color: white;
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
@@ -240,40 +499,40 @@ body main form .billing__form-group #reservation-form-card-details {
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-body main form .billing__form-group #reservation-form-email::-webkit-input-placeholder,
-body main form .billing__form-group #reservation-form-address-1::-webkit-input-placeholder,
-body main form .billing__form-group #reservation-form-address-2::-webkit-input-placeholder,
-body main form .billing__form-group #reservation-form-card-holder::-webkit-input-placeholder,
-body main form .billing__form-group #reservation-form-card-details::-webkit-input-placeholder {
+body main .container form .billing__form-group #reservation-form-email::-webkit-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-1::-webkit-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-2::-webkit-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-holder::-webkit-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-details::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body main form .billing__form-group #reservation-form-email:-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-address-1:-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-address-2:-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-card-holder:-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-card-details:-ms-input-placeholder {
+body main .container form .billing__form-group #reservation-form-email:-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-1:-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-2:-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-holder:-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-details:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body main form .billing__form-group #reservation-form-email::-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-address-1::-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-address-2::-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-card-holder::-ms-input-placeholder,
-body main form .billing__form-group #reservation-form-card-details::-ms-input-placeholder {
+body main .container form .billing__form-group #reservation-form-email::-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-1::-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-address-2::-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-holder::-ms-input-placeholder,
+body main .container form .billing__form-group #reservation-form-card-details::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body main form .billing__form-group #reservation-form-email::placeholder,
-body main form .billing__form-group #reservation-form-address-1::placeholder,
-body main form .billing__form-group #reservation-form-address-2::placeholder,
-body main form .billing__form-group #reservation-form-card-holder::placeholder,
-body main form .billing__form-group #reservation-form-card-details::placeholder {
+body main .container form .billing__form-group #reservation-form-email::placeholder,
+body main .container form .billing__form-group #reservation-form-address-1::placeholder,
+body main .container form .billing__form-group #reservation-form-address-2::placeholder,
+body main .container form .billing__form-group #reservation-form-card-holder::placeholder,
+body main .container form .billing__form-group #reservation-form-card-details::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body main form .billing__form-group .billing__form-row input,
-body main form .billing__form-group .billing__form-row select {
+body main .container form .billing__form-group .billing__form-row input,
+body main .container form .billing__form-group .billing__form-row select {
   font-size: 16px;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -286,31 +545,31 @@ body main form .billing__form-group .billing__form-row select {
   color: black;
 }
 
-body main form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
-body main form .billing__form-group .billing__form-row select::-webkit-input-placeholder {
+body main .container form .billing__form-group .billing__form-row input::-webkit-input-placeholder,
+body main .container form .billing__form-group .billing__form-row select::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-size: inherit;
 }
 
-body main form .billing__form-group .billing__form-row input:-ms-input-placeholder,
-body main form .billing__form-group .billing__form-row select:-ms-input-placeholder {
+body main .container form .billing__form-group .billing__form-row input:-ms-input-placeholder,
+body main .container form .billing__form-group .billing__form-row select:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-size: inherit;
 }
 
-body main form .billing__form-group .billing__form-row input::-ms-input-placeholder,
-body main form .billing__form-group .billing__form-row select::-ms-input-placeholder {
+body main .container form .billing__form-group .billing__form-row input::-ms-input-placeholder,
+body main .container form .billing__form-group .billing__form-row select::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-size: inherit;
 }
 
-body main form .billing__form-group .billing__form-row input::placeholder,
-body main form .billing__form-group .billing__form-row select::placeholder {
+body main .container form .billing__form-group .billing__form-row input::placeholder,
+body main .container form .billing__form-group .billing__form-row select::placeholder {
   color: rgba(0, 0, 0, 0.3);
   font-size: inherit;
 }
 
-body main form .billing__form-group .billing__form-row #reservation-form-country {
+body main .container form .billing__form-group .billing__form-row #reservation-form-country {
   color: rgba(0, 0, 0, 0.3);
   padding: 17px 31px;
   -webkit-appearance: none;
@@ -322,7 +581,7 @@ body main form .billing__form-group .billing__form-row #reservation-form-country
   background-position: 281px 28px;
 }
 
-body main form .card-element {
+body main .container form .card-element {
   font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -348,24 +607,24 @@ body main form .card-element {
   color: rgba(0, 0, 0, 0.3);
 }
 
-body main form .card-element #reservation-form-card {
+body main .container form .card-element #reservation-form-card {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
 }
 
-body main form .billing__info-row {
+body main .container form .billing__info-row {
   -ms-flex-item-align: start;
       align-self: flex-start;
   font-weight: 300;
   font-size: 24px;
 }
 
-body main form .billing__info-row p span {
+body main .container form .billing__info-row p span {
   color: green;
 }
 
-body main form #reservation-button {
+body main .container form #reservation-button {
   background-color: #bc915f;
   -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
@@ -382,7 +641,9 @@ body footer {
 }
 
 body footer .container {
-  max-width: 63%;
+  width: 63%;
+  min-width: 1234px;
+  max-width: 1234px;
   margin: 0 auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
