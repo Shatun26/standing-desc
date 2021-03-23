@@ -1,0 +1,324 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+$maxWidth: 1920;
+$maxWidthContainer: 65vw;
+@mixin adaptiv-value($property, $startSize, $minSize, $type) {
+  $addsize: $startSize - $minSize;
+  @if $type == l {
+    // если меньше контейнера
+    max-width: #{$maxWidthContainer + px} {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+  } @else if $type==2 {
+    // если больше контейнера
+    min-width: #{$maxWidthContainer + px} {
+      #{$property}: calc(#{$minSize + px} + #{$addsize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+  } @else {
+    // всегда
+    #{$property}: calc(#{$minSize + px} + #{$addsize} * ((100vw - 320px) / #{$maxWidth - 320}));
+  }
+}
+// использование
+// .element {
+// @include adaptiv-value("padding", 50, 20, 0);
+///////////////////////////////////////////////////
+$mainGray: #474c48;
+$mainBrown: #bc915f;
+
+::-webkit-scrollbar {
+  width: 1vw;
+  background: $mainGray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $mainBrown;
+}
+
+body {
+  font-family: 'Montserrat';
+  overflow-x: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html {
+  overflow-x: hidden;
+}
+
+.burger {
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 65%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  svg {
+    width: 2.4vw;
+    height: 2.4vw;
+    margin-right: 1.15vw;
+  }
+  span {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.25vw;
+    line-height: 1.5vw;
+    color: #ffffff;
+  }
+}
+hr {
+  border-color: $mainBrown;
+}
+body {
+  .Promo {
+    flex-grow: 1;
+    position: relative;
+    background: linear-gradient(
+      -270deg,
+      #474c48 0%,
+      #474c48 50%,
+      rgba(255, 255, 255, 1) 50%
+    );
+    .container {
+      header {
+        padding: 1.7vw 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 3.17vw;
+        .header_icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: fit-content;
+          .icon {
+            outline: none;
+            width: 1.56vw;
+            height: 1.56vw;
+            @include adaptiv-value("width", 30, 20, 0);
+            @include adaptiv-value("height", 30, 20, 0);
+            margin-left: 0.8vw;
+            svg {
+              width: 100%;
+              path{
+                fill: black;
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+      }
+      .introdusing {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-content: center;
+        padding-bottom: 7.8vw;
+        min-height: 70vh;
+        .introdusing-title {
+          margin-right: 1.14vw;
+          h1 {
+            color: #fff;
+            grid-area: title;
+            font-size: 1.87vw;
+            line-height: 2.3vw;
+            font-style: normal;
+            font-weight: 300;
+            margin-bottom: 8vw;
+            > span {
+              display: inline-block;
+              position: relative;
+              text-transform: uppercase;
+              font-weight: bold;
+              transform: scale(3.05);
+              top: 1.56vw;
+              left: 5.72vw;
+              &::before {
+                position: absolute;
+                content: '';
+                width: 4.5vw;
+                height: 5px;
+                background-color: $mainBrown;
+                bottom: 0.4vw;
+                right: 102%;
+              }
+              > span {
+                color: $mainBrown;
+              }
+            }
+          }
+          .table-img {
+            width: 21vw;
+            height: 13.6;
+            margin: 0 auto;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+        .join {
+          align-self: center;
+          margin-left: 3.75vw;
+          h1 {
+            font-size: 2.5vw;
+            color: #333333;
+            margin-bottom: 2.4vw;
+            span {
+              color: $mainBrown;
+            }
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            background-color: $mainBrown;
+            padding: 1vw 2.9vw;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            font-size: 0.9vw;
+            letter-spacing: 0.02em;
+          }
+          p{
+            font-size: 0.9vw;
+            color: #333333;
+            letter-spacing: 0.02em;
+            margin-top: 2.4vw;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+  footer {
+    background-color: #363736;
+    padding: 3vw 0;
+    .container {
+      width: 64%;
+      // min-width: 1234px;
+      // max-width: 1234px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      .logo {
+        display: flex;
+        align-items: center;
+        svg {
+          width: 2.4vw;
+          height: 2.4vw;
+          margin-right: 1.14vw;
+        }
+        span {
+          font-weight: 700;
+          font-style: normal;
+          font-size: 1.25vw;
+          line-height: 1.14vw;
+          color: #ffffff;
+        }
+      }
+      hr {
+        flex-grow: 1;
+        background-color: #bc915f;
+        border: none;
+        outline: none;
+        height: 2px;
+        margin: 0 1.2vw;
+      }
+      .social-icons {
+        display: flex;
+        align-items: center;
+
+        .s__icon {
+          width: 1.5vw;
+          height: 1.5vw;
+          &:first-of-type {
+            margin-right: 0.9vw;
+          }
+          svg {
+            width: 1.5vw;
+            height: 1.5vw;
+          }
+        }
+      }
+    }
+  }
+}
