@@ -121,8 +121,8 @@ html {
 .bottomLine .social-icons {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.3vw 1.3vw 1.3vw;
-      grid-template-columns: 1.3vw 1.3vw 1.3vw;
+  -ms-grid-columns: 1.3vw 1.3vw;
+      grid-template-columns: 1.3vw 1.3vw;
   gap: 1.1vw;
 }
 
@@ -239,6 +239,10 @@ hr {
 
 .Promo .container header .header_icons .icon svg {
   width: 100%;
+}
+
+.Promo .container header .header_icons .icon svg path {
+  fill: #474c48;
 }
 
 .Promo .container .body {
@@ -479,6 +483,10 @@ hr {
   font-size: 0.93vw;
   line-height: 1.15vw;
   color: #fff;
+}
+
+.Promo .container .bottomLine hr {
+  margin-left: 0;
 }
 
 .DeskInfo {
@@ -1190,15 +1198,6 @@ footer .container .bottomLine span {
   .Promo .container header .header_icons.disable .icon:nth-of-type(2) path {
     fill: white;
   }
-  .Promo .container header .header_icons.disable .icon:nth-of-type(3) {
-    -webkit-transform: translateX(23vw) translateY(-3vw);
-            transform: translateX(23vw) translateY(-3vw);
-    -webkit-transition-delay: 0.2s;
-            transition-delay: 0.2s;
-  }
-  .Promo .container header .header_icons.disable .icon:nth-of-type(3) path {
-    stroke: white;
-  }
   .Promo .container header .header_icons.active .icon {
     position: absolute;
     width: 3vw;
@@ -1214,8 +1213,8 @@ footer .container .bottomLine span {
     height: 100%;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(1) {
-    -webkit-transform: translateX(13vw);
-            transform: translateX(13vw);
+    -webkit-transform: translateX(19vw);
+            transform: translateX(19vw);
     -webkit-transition-delay: 0.2s;
             transition-delay: 0.2s;
   }
@@ -1223,20 +1222,13 @@ footer .container .bottomLine span {
     fill: white;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(2) {
-    -webkit-transform: translateX(18vw);
-            transform: translateX(18vw);
+    -webkit-transform: translateX(24vw);
+            transform: translateX(24vw);
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(2) path {
     fill: white;
-  }
-  .Promo .container header .header_icons.active .icon:nth-of-type(3) {
-    -webkit-transform: translateX(23vw);
-            transform: translateX(23vw);
-  }
-  .Promo .container header .header_icons.active .icon:nth-of-type(3) path {
-    stroke: white;
   }
   .Promo .container header .burger {
     display: block;
@@ -1755,7 +1747,7 @@ footer .container .bottomLine span {
   .Promo .container header .logo::after {
     position: absolute;
     content: '';
-    height: 25px;
+    height: 30px;
     width: 100%;
     background-color: #474c48;
     z-index: 0;
@@ -1780,15 +1772,15 @@ footer .container .bottomLine span {
     height: 100%;
   }
   .Promo .container header .header_icons.disable .icon:nth-of-type(1) {
-    -webkit-transform: translateX(-20vw) translateY(-6vw);
-            transform: translateX(-20vw) translateY(-6vw);
+    -webkit-transform: translateX(-10vw) translateY(-6vw);
+            transform: translateX(-10vw) translateY(-6vw);
   }
   .Promo .container header .header_icons.disable .icon:nth-of-type(1) path {
     fill: white;
   }
   .Promo .container header .header_icons.disable .icon:nth-of-type(2) {
-    -webkit-transform: translateX(-10vw) translateY(-6vw);
-            transform: translateX(-10vw) translateY(-6vw);
+    -webkit-transform: translateX(0vw) translateY(-6vw);
+            transform: translateX(0vw) translateY(-6vw);
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
   }
@@ -1819,14 +1811,14 @@ footer .container .bottomLine span {
     height: 100%;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(1) {
-    -webkit-transform: translateX(-20vw);
-            transform: translateX(-20vw);
+    -webkit-transform: translateX(-10vw);
+            transform: translateX(-10vw);
     -webkit-transition-delay: 0.2s;
             transition-delay: 0.2s;
   }
   .Promo .container header .header_icons.active .icon:nth-of-type(2) {
-    -webkit-transform: translateX(-10vw);
-            transform: translateX(-10vw);
+    -webkit-transform: translateX(0vw);
+            transform: translateX(0vw);
     -webkit-transition-delay: 0.1s;
             transition-delay: 0.1s;
   }

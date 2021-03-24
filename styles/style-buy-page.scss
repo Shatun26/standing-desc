@@ -399,7 +399,7 @@ body {
             outline: none;
             border: none;
             font-size: 16px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
             &::placeholder {
               color: rgba(0, 0, 0, 0.3);
             }
@@ -409,7 +409,7 @@ body {
             select {
               font-size: 16px;
 
-              box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+              filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
               border-radius: 5px;
               border: none;
               padding: 17px 31px;
@@ -443,7 +443,7 @@ body {
             align-self: start;
           }
           grid-column: 1/3;
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
           border-radius: 5px;
           border: none;
           padding: 17px 31px;
@@ -469,7 +469,7 @@ body {
         #reservation-button {
           background-color: #bc915f;
           color: #fff;
-          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+         filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
           border-radius: 5px;
           border: none;
           padding: 15px 60px;
@@ -1589,7 +1589,7 @@ body {
               outline: none;
               border: none;
               font-size: 3.8vw;
-              box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+              filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
               &::placeholder {
                 color: rgba(0, 0, 0, 0.3);
                 font-size: inherit;
@@ -1601,7 +1601,7 @@ body {
               select {
                 font-size: 3.8vw;
 
-                box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+                filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
                 border-radius: 1.2vw;
 
                 border: none;
@@ -1633,7 +1633,7 @@ body {
               align-self: start;
             }
             grid-column: 1/3;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
             border-radius: 1.2vw;
 
             border: none;
@@ -1666,7 +1666,7 @@ body {
           }
           #reservation-button {
             background-color: #bc915f;
-            box-shadow: 0px 0.5vw 1.3vw rgba(0, 0, 0, 0.15);
+            filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
             border-radius: 1.5vw;
             border: none;
             padding: 4vw 14vw;
@@ -1741,4 +1741,7 @@ body {
       }
     }
   }
+}
+.is-invalid {
+  box-shadow: inset 0 0 0 1px red;
 }

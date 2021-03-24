@@ -25,13 +25,3 @@ function togglePlayPause() {
 psevdoPlay.onclick = function(){
   togglePlayPause();
 }
-console.log(123123);
-document.querySelector('.burger').addEventListener('click', ()=>{
-  console.log(212312);
-  document.querySelector('.burger').classList.toggle('active')
-  document.querySelector('.header_icons').classList.toggle('active')
-  document.querySelector('.logo').classList.toggle('active')
-
-  document.querySelector('.header_icons').classList.toggle('disable')
-
-})

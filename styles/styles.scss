@@ -92,9 +92,8 @@ body {
   font-family: 'Montserrat';
   overflow-x: hidden;
 }
-html{
+html {
   overflow-x: hidden;
-
 }
 
 .burger {
@@ -113,7 +112,7 @@ html{
   padding: 2.7vw 0;
   .social-icons {
     display: grid;
-    grid-template-columns: 1.3vw 1.3vw 1.3vw;
+    grid-template-columns: 1.3vw 1.3vw;
     gap: 1.1vw;
     .s__icon {
       width: 1.3vw;
@@ -191,6 +190,9 @@ hr {
           margin-left: 1.4vw;
           svg {
             width: 100%;
+            path {
+              fill: $mainGray;
+            }
           }
         }
       }
@@ -373,6 +375,11 @@ hr {
             color: #fff;
           }
         }
+      }
+    }
+    .bottomLine {
+      hr {
+        margin-left: 0;
       }
     }
   }
@@ -983,14 +990,7 @@ footer {
                   fill: white;
                 }
               }
-              &:nth-of-type(3) {
-                transform: translateX(23vw) translateY(-3vw);
-                transition-delay: 0.2s;
-
-                path {
-                  stroke: white;
-                }
-              }
+              
             }
           }
           &.active {
@@ -1007,25 +1007,20 @@ footer {
               }
               opacity: 1;
               &:nth-of-type(1) {
-                transform: translateX(13vw);
+                transform: translateX(19vw);
                 transition-delay: 0.2s;
                 path {
                   fill: white;
                 }
               }
               &:nth-of-type(2) {
-                transform: translateX(18vw);
+                transform: translateX(24vw);
                 transition-delay: 0.1s;
                 path {
                   fill: white;
                 }
               }
-              &:nth-of-type(3) {
-                transform: translateX(23vw);
-                path {
-                  stroke: white;
-                }
-              }
+              
             }
           }
         }
@@ -1558,7 +1553,7 @@ footer {
           &::after {
             position: absolute;
             content: '';
-            height: 25px;
+            height: 30px;
             width: 100%;
             background-color: #474c48;
             z-index: 0;
@@ -1585,13 +1580,13 @@ footer {
                 height: 100%;
               }
               &:nth-of-type(1) {
-                transform: translateX(-20vw) translateY(-6vw);
+                transform: translateX(-10vw) translateY(-6vw);
                 path {
                   fill: white;
                 }
               }
               &:nth-of-type(2) {
-                transform: translateX(-10vw) translateY(-6vw);
+                transform: translateX(0vw) translateY(-6vw);
                 transition-delay: 0.1s;
                 path {
                   fill: white;
@@ -1621,11 +1616,11 @@ footer {
               }
               opacity: 1;
               &:nth-of-type(1) {
-                transform: translateX(-20vw);
+                transform: translateX(-10vw);
                 transition-delay: 0.2s;
               }
               &:nth-of-type(2) {
-                transform: translateX(-10vw);
+                transform: translateX(0vw);
                 transition-delay: 0.1s;
               }
               &:nth-of-type(3) {
@@ -1891,7 +1886,7 @@ footer {
         margin: 0 auto;
         font-weight: 600;
       }
-      p.text{
+      p.text {
         font-size: 3.9vw;
         padding: 6vw 0;
         width: 90%;
