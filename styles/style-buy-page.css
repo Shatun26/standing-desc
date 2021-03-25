@@ -217,7 +217,7 @@ body header .introdusing .introdusing-title h1 {
   line-height: 44px;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
 }
 
 body header .introdusing .introdusing-title h1 > span {
@@ -296,8 +296,8 @@ body header .introdusing .purple-swan hr {
 }
 
 body header .introdusing .table-img {
-  width: 355px;
-  height: 211px;
+  width: 394px;
+  height: 250px;
   margin: 0 auto;
   margin-right: 130px;
 }
@@ -825,7 +825,7 @@ body footer p {
     line-height: 3.38vw;
     font-style: normal;
     font-weight: 300;
-    margin-bottom: 7.7vw;
+    margin-bottom: 10.7vw;
   }
   body header .introdusing .introdusing-title h1 > span {
     display: inline-block;
@@ -895,8 +895,8 @@ body footer p {
     outline: none;
   }
   body header .introdusing .table-img {
-    width: 27vw;
-    height: 16.2vw;
+    width: 30vw;
+    height: 19.2vw;
     margin: 0 auto;
     margin-right: 10vw;
   }
