@@ -137,7 +137,7 @@ body header .container-header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 142px;
+  margin-bottom: 30px;
 }
 
 body header .container-header .logo {
@@ -217,7 +217,7 @@ body header .introdusing .introdusing-title h1 {
   line-height: 44px;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 
 body header .introdusing .introdusing-title h1 > span {
@@ -296,8 +296,8 @@ body header .introdusing .purple-swan hr {
 }
 
 body header .introdusing .table-img {
-  width: 405px;
-  height: 261px;
+  width: 355px;
+  height: 211px;
   margin: 0 auto;
   margin-right: 130px;
 }
@@ -756,7 +756,7 @@ body footer p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 10.9vw;
+    margin-bottom: 2.3vw;
   }
   body header .container-header .logo {
     display: -webkit-box;
@@ -825,7 +825,7 @@ body footer p {
     line-height: 3.38vw;
     font-style: normal;
     font-weight: 300;
-    margin-bottom: 10.77vw;
+    margin-bottom: 7.7vw;
   }
   body header .introdusing .introdusing-title h1 > span {
     display: inline-block;
@@ -895,8 +895,8 @@ body footer p {
     outline: none;
   }
   body header .introdusing .table-img {
-    width: 31vw;
-    height: 20vw;
+    width: 27vw;
+    height: 16.2vw;
     margin: 0 auto;
     margin-right: 10vw;
   }

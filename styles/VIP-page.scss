@@ -139,7 +139,7 @@ hr {
 body {
   header {
     padding-top: 30px;
-    padding-bottom: 140px;
+    padding-bottom: 30px;
     background: linear-gradient(
       -270deg,
       #474c48 0%,
@@ -150,7 +150,7 @@ body {
       flex-direction: row;
       justify-content: space-between;
       margin: 0 auto;
-      
+
       .logo {
         display: flex;
         align-items: center;
@@ -195,7 +195,7 @@ body {
     flex-grow: 1;
     display: flex;
     align-items: center;
-    padding-bottom: 200px;
+    padding-bottom: 30px;
     background: linear-gradient(
       -270deg,
       #474c48 0%,
@@ -218,7 +218,7 @@ body {
             line-height: 44px;
             font-style: normal;
             font-weight: 300;
-            margin-bottom: 140px;
+            margin-bottom: 100px;
             > span {
               display: inline-block;
               position: relative;
@@ -279,14 +279,14 @@ body {
             font-size: 18px;
             line-height: 165%;
             margin-bottom: 40px;
-            &:last-of-type{
+            &:last-of-type {
               display: none;
             }
           }
         }
         .table-img {
-          width: 405px;
-          height: 261px;
+          width: 355px;
+          height: 211px;
           margin: 0 auto;
           margin-right: 130px;
           img {
@@ -359,7 +359,7 @@ body {
   body {
     header {
       padding-top: 3vw;
-      padding-bottom: 12vw;
+      padding-bottom: 2.3vw;
       background: linear-gradient(
         -270deg,
         #474c48 0%,
@@ -553,12 +553,11 @@ body {
         }
       }
     }
-    main{
-      padding-bottom: 12vw ;
-      .container-header{
+    main {
+      padding-bottom: 2.3vw;
+      .container-header {
         width: 95%;
         min-width: auto;
-
       }
       .introdusing-wrapper {
         height: 100%;
@@ -575,7 +574,7 @@ body {
               line-height: 3.38vw;
               font-style: normal;
               font-weight: 300;
-              margin-bottom: 10.77vw;
+              margin-bottom: 7.7vw;
               > span {
                 display: inline-block;
                 position: relative;
@@ -639,8 +638,8 @@ body {
             }
           }
           .table-img {
-            width: 31vw;
-            height: 20vw;
+            width: 27vw;
+            height: 16.2vw;
             margin: 0 auto;
             margin-right: 10vw;
             img {
@@ -792,9 +791,8 @@ body {
           }
         }
       }
-      
     }
-    main{
+    main {
       background: $mainGray;
       .introdusing-wrapper {
         height: 100%;
@@ -1020,12 +1018,11 @@ body {
           }
         }
       }
-      
     }
-    main{
+    main {
       .introdusing-wrapper {
         height: 100%;
-        
+
         .introdusing {
           margin: 0 auto;
           display: grid;
@@ -1099,10 +1096,10 @@ body {
               font-size: 4.34vw;
               line-height: 165%;
               margin-bottom: 3vw;
-              &:first-of-type{
+              &:first-of-type {
                 display: none;
               }
-              &:last-of-type{
+              &:last-of-type {
                 display: block;
               }
             }

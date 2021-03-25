@@ -165,7 +165,7 @@ hr {
 
 body header {
   padding-top: 30px;
-  padding-bottom: 140px;
+  padding-bottom: 30px;
   background: -webkit-gradient(linear, left top, right top, from(#474c48), color-stop(50%, #474c48), color-stop(50%, white));
   background: linear-gradient(-270deg, #474c48 0%, #474c48 50%, white 50%);
 }
@@ -249,7 +249,7 @@ body main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 200px;
+  padding-bottom: 30px;
   background: -webkit-gradient(linear, left top, right top, from(#474c48), color-stop(50%, #474c48), color-stop(50%, white));
   background: linear-gradient(-270deg, #474c48 0%, #474c48 50%, white 50%);
 }
@@ -282,7 +282,7 @@ body main .introdusing-wrapper .introdusing .introdusing-title h1 {
   line-height: 44px;
   font-style: normal;
   font-weight: 300;
-  margin-bottom: 140px;
+  margin-bottom: 100px;
 }
 
 body main .introdusing-wrapper .introdusing .introdusing-title h1 > span {
@@ -372,8 +372,8 @@ body main .introdusing-wrapper .introdusing .purple-swan a:last-of-type {
 }
 
 body main .introdusing-wrapper .introdusing .table-img {
-  width: 405px;
-  height: 261px;
+  width: 355px;
+  height: 211px;
   margin: 0 auto;
   margin-right: 130px;
 }
@@ -472,7 +472,7 @@ body footer p {
 @media (max-width: 1300px) {
   body header {
     padding-top: 3vw;
-    padding-bottom: 12vw;
+    padding-bottom: 2.3vw;
     background: -webkit-gradient(linear, left top, right top, from(#474c48), color-stop(50%, #474c48), color-stop(50%, white));
     background: linear-gradient(-270deg, #474c48 0%, #474c48 50%, white 50%);
   }
@@ -711,7 +711,7 @@ body footer p {
     height: 2.3vw;
   }
   body main {
-    padding-bottom: 12vw;
+    padding-bottom: 2.3vw;
   }
   body main .container-header {
     width: 95%;
@@ -737,7 +737,7 @@ body footer p {
     line-height: 3.38vw;
     font-style: normal;
     font-weight: 300;
-    margin-bottom: 10.77vw;
+    margin-bottom: 7.7vw;
   }
   body main .introdusing-wrapper .introdusing .introdusing-title h1 > span {
     display: inline-block;
@@ -814,8 +814,8 @@ body footer p {
     margin-bottom: 3vw;
   }
   body main .introdusing-wrapper .introdusing .table-img {
-    width: 31vw;
-    height: 20vw;
+    width: 27vw;
+    height: 16.2vw;
     margin: 0 auto;
     margin-right: 10vw;
   }
