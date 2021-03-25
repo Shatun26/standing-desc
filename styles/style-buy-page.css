@@ -295,6 +295,22 @@ body header .introdusing .purple-swan hr {
   outline: none;
 }
 
+body header .introdusing .purple-swan a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 56px;
+  background-color: #bc915f;
+  border-radius: 5px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 18px;
+  margin-top: 40px;
+  -webkit-filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+}
+
 body header .introdusing .table-img {
   width: 394px;
   height: 250px;
@@ -893,6 +909,19 @@ body footer p {
     margin-bottom: 2.9vw;
     border: none;
     outline: none;
+  }
+  body header .introdusing .purple-swan a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.15vw 4.3vw;
+    background-color: #bc915f;
+    border-radius: 0.4vw;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 1.4vw;
+    margin-top: 3vw;
   }
   body header .introdusing .table-img {
     width: 30vw;
@@ -1547,6 +1576,19 @@ body footer p {
     border: none;
     outline: none;
   }
+  body header .introdusing .purple-swan a {
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5vw 6.3vw;
+    background-color: #bc915f;
+    border-radius: 0.7vw;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 2vw;
+    margin-top: 5.2vw;
+  }
   body header .introdusing .table-img {
     width: 34vw;
     height: 24.7vw;
@@ -1800,6 +1842,21 @@ body footer p {
     margin-bottom: 2.9vw;
     border: none;
     outline: none;
+  }
+  body header .introdusing .purple-swan a {
+    text-decoration: none;
+    color: #fff;
+    padding: 3.5vw 14vw;
+    background-color: #bc915f;
+    border-radius: 1.5vw;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 5.34vw;
+    margin-top: 5.2vw;
+    width: 100%;
+    text-align: center;
   }
   body header .introdusing .table-img {
     width: 71.5vw;
