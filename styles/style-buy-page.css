@@ -312,7 +312,7 @@ body main {
   color: white;
   background-color: #474c48;
   padding-top: 50px;
-  padding-bottom: 288px;
+  padding-bottom: 50px;
 }
 
 body main .about {
@@ -742,7 +742,7 @@ body footer p {
 @media (max-width: 1300px) {
   body header {
     padding-top: 3vw;
-    padding-bottom: 2.3vw;
+    padding-bottom: 2vw;
     background: -webkit-gradient(linear, left top, right top, from(#474c48), color-stop(50%, #474c48), color-stop(50%, white));
     background: linear-gradient(-270deg, #474c48 0%, #474c48 50%, white 50%);
   }
