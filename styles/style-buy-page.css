@@ -646,6 +646,7 @@ body main .container form .card-element #reservation-form-card {
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
+  width: 100%;
 }
 
 body main .container form .billing__info-row {
